@@ -1,0 +1,26 @@
+.ctn-service {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.div-service{
+    margin-left: auto;
+    margin-right: auto;
+}
+.div-service h2{
+    color: rgba(193, 191, 191, 0.687);
+   font-size: 30px;
+   font-weight: 700;
+   letter-spacing: 1vw;
+    margin-top: 35vh;
+}
+
+.icon-arrow{
+    color: rgba(193, 191, 191, 0.687);
+    font-size: 50px;
+    margin-top: 35vh;
+}
+
