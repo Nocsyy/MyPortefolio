@@ -7,10 +7,12 @@
 }
 
 .data{
+    margin-top: 5vh;
     position: relative;
     width: 30%;
     height: 40vh; 
 }
+
 .data p{
     width: 100%;
     margin: 0;
@@ -60,4 +62,7 @@
     padding-left: 20px;
     color: white;
   }
-  
+.url {
+  position: absolute;
+  margin-top:-8vh;
+}

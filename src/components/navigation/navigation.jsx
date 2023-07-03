@@ -14,9 +14,12 @@ function Navigation() {
             <header>
                 <nav className="nav">
                     <div id="ctn-effect-glitch">
+                    <Link to='/' style={{textDecoration : 'none'}}>
                         <h4>ANDY OZDEMIR +_+</h4>
                         <h4>ANDY OZDEMIR +_+</h4>
                         <h4>ANDY OZDEMIR +_+</h4>
+                    </Link> 
+                                     
                     </div>
                     <div className="ctn-list-menu">
                         <span className="material-symbols-outlined icon-menu"
@@ -31,7 +34,7 @@ function Navigation() {
                                 <Link to="/réalisation" style={{ textDecoration: 'none' }}>
                                     <li>Réalisation</li>
                                 </Link>
-                                <Link to="#" style={{ textDecoration: 'none' }}>
+                                <Link to="/contact" style={{ textDecoration: 'none' }}>
                                     <li>Contact</li>
                                 </Link>
 

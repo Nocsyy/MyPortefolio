@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "./realisation.css";
 
 function Realisation(props) {
@@ -25,21 +25,23 @@ function Realisation(props) {
     <div className="ctn-data">
       {data.map((item) => (
         <div
-          className={`data ${hoveredItem && hoveredItem.id === item.id ? 'hovered' : ''}`}
+          className={`data ${
+            hoveredItem && hoveredItem.id === item.id ? "hovered" : ""
+          }`}
           key={item.id}
           onMouseEnter={() => handleItemHover(item)}
           onMouseLeave={() => handleItemLeave()}
         >
           <p>{item.title}</p>
           <div>
-            <img src={`/asset/${item.img}`} alt={item.title} />
+            <a href={item.url} target="_blank" rel="noopener noreferrer">
+              <img src={`/asset/${item.img}`} alt={item.title} />
+            </a>
             {hoveredItem && hoveredItem.id === item.id && (
               <div>
                 <div className="description">{item.description}</div>
                 <div className="langage">{item.langage}</div>
-                <div>{item.url}</div>
               </div>
-
             )}
           </div>
         </div>
