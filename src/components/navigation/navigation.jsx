@@ -15,9 +15,9 @@ function Navigation() {
                 <nav className="nav">
                     <div id="ctn-effect-glitch">
                     <Link to='/' style={{textDecoration : 'none'}}>
-                        <h4>ANDY OZDEMIR +_+</h4>
-                        <h4>ANDY OZDEMIR +_+</h4>
-                        <h4>ANDY OZDEMIR +_+</h4>
+                        <h4 className="title_nav">ANDY OZDEMIR +_+</h4>
+                        <h4 className="title_nav">ANDY OZDEMIR +_+</h4>
+                        <h4 className="title_nav">ANDY OZDEMIR +_+</h4>
                     </Link> 
                                      
                     </div>

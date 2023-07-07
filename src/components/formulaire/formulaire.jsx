@@ -19,7 +19,7 @@ import { addDoc, collection } from "firebase/firestore/lite";
 
     return(
         <div className="ctn-form">
-            <h3>Contact</h3>
+            <h3>Contact 📲</h3>
             <form>
                 <label>Votre e-mail</label>
                 <input onChange={(event)=>{
@@ -31,10 +31,10 @@ import { addDoc, collection } from "firebase/firestore/lite";
                     setName(event.target.value)
                 }}className="inout-obj" type="text" placeholder="Name"></input>
                 <label>Votre message :</label>
-                <input 
+                <textarea
                  onChange={(event)=>{
                     setMessage(event.target.value)
-                }}className="input-msg" type="text" placeholder="Message"></input>
+                }}className="input-msg" type="text" placeholder="Message"></textarea>
                 <button onClick={handleSubmit}>Envoyer</button>
             </form>
         </div>

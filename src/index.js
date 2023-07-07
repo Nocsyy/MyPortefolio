@@ -7,7 +7,7 @@ import Acceuil from './pages/acceuil';
 import Service from './components/services/service';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Realisation from './components/réalisation/réalisation';
-import Contact from './components/contacte/contacte';
+import Formulaire from './components/formulaire/formulaire';
 
 
 ReactDOM.render(
@@ -16,7 +16,7 @@ ReactDOM.render(
     <Routes>
       <Route exact path='/' element={<Service />} />
       <Route exact path='/réalisation' element={<Realisation />} />
-      <Route exact path='/contact' element={<Contact />} />
+      <Route exact path='/contact' element={<Formulaire />} />
     </Routes>
   </BrowserRouter>,
   document.getElementById('root')

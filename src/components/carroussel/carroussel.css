@@ -1,0 +1,48 @@
+.img_carroussel {
+    width: 50vw;
+    height: 35vh;
+    border : 0.5px solid rgba(0, 0, 0, 0.254);
+}
+.img_carroussel img{
+    object-fit: cover;
+    width: 100%;
+    height: 35vh;
+    
+}
+.ctn-btn{
+    display: flex;
+    justify-content: space-between;
+    margin-top: -20vh;
+    height: 10vh;
+    width: 100%;
+ 
+
+
+}
+.btn-next, .btn-previous{
+    width: 10%;
+    height: 100%;
+    margin: 0;
+    background-color: rgba(255, 255, 255, 0);
+    color: rgba(53, 52, 52, 0.703);
+    border: none;
+    
+}
+.btn-next span, .btn-previous span{
+    font-size: 50pt;
+}
+
+@media only screen and (max-width: 600px) {
+    .photoLogement img{
+        height: 30vh;
+    }
+    .ctn-btn{
+        width: 95vw;
+    }
+    .btn-next, .btn-previous{
+        margin-top: -30vh;
+    }
+    .btn-next span, .btn-previous span {
+        font-size: 25pt;
+    }
+}

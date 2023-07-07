@@ -1,8 +1,20 @@
 .ctn-form {
     min-height: 90vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     
 }
+.ctn-form label{
+    color: rgb(242, 241, 241);
+}
 
+h3{
+    color: white;
+    font-size: x-large;
+    margin-left: auto;
+    margin-right: auto;
+}
 form{
     margin-left: auto;
     margin-right: auto;
@@ -17,12 +29,18 @@ label{
 }
 input{
     margin-bottom: 2vh;
+    
 }
 .inout-obj, .input-email{
-    height: 3vh;
+    height: 4vh;
+    color: black;
+    outline: none;
 }
 .input-msg{
     height: 20vh;
+    outline: none;
+    padding: 10px;
+
 }
 button{
     margin-left: auto;

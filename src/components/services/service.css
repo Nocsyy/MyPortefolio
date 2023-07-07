@@ -1,26 +1,222 @@
-.ctn-service {
-    width: 100%;
-    height: 100vh;
+.ctn-element1, .ctn-element2, .ctn-element3{
     display: flex;
     flex-direction: column;
     align-items: center;
-
+    text-align: center;
+    
 }
-.div-service{
-    margin-left: auto;
-    margin-right: auto;
+.element1, .element2, .element3{
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
-.div-service h2{
-    color: rgba(193, 191, 191, 0.687);
-   font-size: 30px;
-   font-weight: 700;
-   letter-spacing: 1vw;
-    margin-top: 35vh;
-}
-
-.icon-arrow{
-    color: rgba(193, 191, 191, 0.687);
-    font-size: 50px;
-    margin-top: 35vh;
+h4{
+    margin-bottom: 0;
 }
 
+.gradient-text {
+    font-size: 2.8rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: move-gradient 15s ease-in-out infinite;
+  }
+  .text_center {
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  
+  @keyframes move-gradient {
+    0% {
+      background-position: 0 0;
+    }
+    100% {
+      background-position: 100% 0;
+    }
+  }
+  
+  .gradient-text:hover {
+    animation-play-state: paused;
+  }
+  
+  .gradient-text {
+    background:  linear-gradient(to right, 
+    rgb(48, 104, 82),
+    #5dab8c,
+    #7fc6a4, 
+    #a2dcc2,
+    #c6f2e1,
+    rgba(251, 242, 237),
+    #c6f2e1,
+    #a2dcc2,
+    #7fc6a4, 
+    #5dab8c,
+    rgb(48, 104, 82)
+     );
+    background-size: 500%;
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: move-gradient 15s ease-in-out infinite alternate;
+    animation-iteration-count: 999999; /* Définir un grand nombre d'itérations */
+    
+  }
+  .gradient-text1{
+    background:  linear-gradient(to right, 
+    #86bfa9,
+    #4f8e72,
+    #3a7d5c, 
+    #296b50,
+    rgb(16, 69, 48),
+    #296b50,
+    #3a7d5c, 
+    #4f8e72,
+    #86bfa9
+     );
+    background-size: 500%;
+    margin-top: 15vh;
+    font-size: 2.8rem;
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: move-gradient 15s ease-in-out infinite alternate;
+    animation-iteration-count: 999999; /* Définir un grand nombre d'itérations */
+    
+  }
+  .languages {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+  }
+  
+  .languages h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .languages ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .languages li {
+    margin-bottom: 20px;
+  }
+  
+  .languages li .language-name {
+    display: inline-block;
+    width: 100px;
+    font-weight: bold;
+    color: #666;
+  }
+  
+  .progress-bar {
+    width: 200px;
+    height: 10px;
+    background-color: #f1f1f1;
+  }
+  
+  .progress {
+    height: 100%;
+    background-color: #69c;
+    width: 0;
+    transition: width 1s ease-in-out;
+  }
+  .first-text, .second-text, .third-text{
+    width: 20;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .first-text span, .second-text span, .third-text span {
+    font-size: 40pt;
+  }
+  .first-text p, .second-text p, .third-text p {
+    width: 20vw;
+    height: 50vh;
+    font-size:  20px;;
+  }
+
+  .App {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.skills {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.skill {
+  margin: 0 10px;
+}
+
+.skill h2 {
+  margin-bottom: 10px;
+}
+
+.skill-bar {
+  width: 200px;
+  height: 20px;
+  background-color: #ccc;
+  border-radius: 10px;
+}
+
+.skill-progress {
+  height: 100%;
+  border-radius: 10px;
+}
+
+.html {
+  background-color: #f16529;
+}
+
+.css {
+  background-color: #2965f1;
+}
+
+.react {
+  background-color: #61dafb;
+}
+
+.javascript {
+  background-color: #f0db4f;
+}
+
+
+.container {
+  margin: 100px auto;
+  width: 500px;
+  text-align: center;
+}
+.progress2 {
+  padding: 6px;
+  border-radius: 30px;
+  background: rgba(0, 0, 0, 0.25);  
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
+}
+
+.progress-bar2 {
+  height: 18px;
+  border-radius: 30px;
+  background-image: 
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
+  transition: 0.4s linear;  
+  transition-property: width, background-color;    
+}
+
+.progress-moved .progress-bar2 {
+  width: 85%; 
+  background-color: #f16529;  
+  animation: progressAnimation 6s;
+}
+
+@keyframes progressAnimation {
+  0%   { width: 5%; background-color: #f7b091;}
+  100% { width: 85%; background-color: #f16529; }
+}

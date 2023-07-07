@@ -38,12 +38,13 @@ li {
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
+  
 }
 .ctn-effect-glitch{
     width: 20vw;
     margin: 10vw auto;
 }
-.nav h4{
+.nav .title_nav{
 text-align: center;
   color: #fff;
   font-size: 2em;
@@ -60,7 +61,7 @@ text-align: center;
 }
 
 
-h4 {
+.title_nav {
     text-align: center;
     color: #fff;
     font-size: 5em;
@@ -76,12 +77,12 @@ h4 {
     animation: glitch1 2.5s infinite;
   }
   
-  h4:nth-child(2) {
+  .title_nav:nth-child(2) {
     color: #67f3da;
     animation: glitch2 2.5s infinite;
   }
   
-  h4:nth-child(3) {
+  .title_nav:nth-child(3) {
     color: #f16f6f;
     animation: glitch3 2.5s infinite;
   }
@@ -251,3 +252,4 @@ h4 {
       opacity: 0.25;
     }
   }
+  
