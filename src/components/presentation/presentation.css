@@ -1,0 +1,30 @@
+
+.ctn_img_presentation{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.ctn_img_presentation p{
+    width: 70%;
+    margin-top: 10vh;
+    background-color:  rgba(227, 224, 137, 0.267);
+    display : flex;
+    align-items: center;
+    text-align: center;
+    
+}
+.div_img_presentation{
+    width: 20vw;
+    height: 20vw;
+    border-radius: 50%;
+    margin-top: 10vh;
+    
+    
+}
+
+.div_img_presentation img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
