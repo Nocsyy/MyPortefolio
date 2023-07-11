@@ -3,7 +3,7 @@
         "id": "0",
         "img": "img.png",
         "img_carroussel": ["imgBluel1.png", "imgBluel2.png", "imgBluel3.png"],
-        "title": "Site d'architecte d'intérieur",
+        "title": "Sophie Bluel",
         "description": "Site pour une architecte d'interieur pour qu'elle puisse diffuser ses réalisations",
         "langage": "JavaScript - Html -Css",
         "url": "https://github.com/Nocsyy/op3",

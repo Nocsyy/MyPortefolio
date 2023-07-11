@@ -1,3 +1,4 @@
+import { hover } from '@testing-library/user-event/dist/hover';
 import React, { useState } from 'react';
 
 const CopyButton = ({ text }) => {
@@ -22,19 +23,40 @@ const CopyButton = ({ text }) => {
       style={{
         width: '25vw',
         height: '5vh',
-        border: '1px solid',
         display: 'flex',
         alignItems: 'center',
+        justifyContent: 'space-between',
+        marginLeft: 'auto',
+        marginRight: 'auto',
+        marginTop: '3vh',
+        marginBottom: '3vh',
       }}
     >
-      <p>ncs.dev@hotmail.com</p>
+      {!isCopied ? (
+        <p>ncs.dev@hotmail.com</p>
+      ) : (
+        <span
+          style={{
+            color: ' rgba(42, 170, 42, 0.585)',
+            fontFamily: 'Montserrat',
+            fontWeight: '500',
+          }}
+        >
+          Copié dans le presse papier
+        </span>
+      )}
       <button
         onClick={handleCopyClick}
-        style={{ backgroundColor: 'rgba(255, 255, 255, 0)', border: 'none' }}
+        style={{
+          backgroundColor: 'rgba(255, 255, 255, 0)',
+          border: 'none',
+          width: '10vh',
+          height: '5vh',
+          color: 'rgba(50, 50, 50, 0.635)',
+        }}
       >
-        <i class='fa-solid fa-copy'></i>
+        <i class='fa-solid fa-copy' style={{ fontSize: 'large' }}></i>
       </button>
-      {isCopied && <span>Texte copié avec succès !</span>}
     </div>
   );
 };

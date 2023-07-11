@@ -20,12 +20,13 @@ function Navigation() {
         </div>
         <div className='ctn-list-menu'>
           <ul>
-            <Link to='/réalisation' style={{ textDecoration: 'none' }}>
+            <a href='#realisation'>
               <li>Réalisation</li>
-            </Link>
-            <Link to='/contact' style={{ textDecoration: 'none' }}>
-              <li>Contact</li>
-            </Link>
+            </a>
+
+            <a href='#ctn-form'>
+              <li className='bar'>Contact</li>
+            </a>
           </ul>
         </div>
       </nav>

@@ -4,14 +4,17 @@ import Apropos from '../Apropos/apropos';
 
 function Presentation() {
   return (
-    <div style={{ height: '100vh' }} className='ctn_presentation'>
+    <div style={{ height: '90vh' }} className='ctn_presentation'>
       <div className='ctn_img_presentation'>
-        <p style={{ fontSize: 'large' }}>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam sequi
-          quidem laudantium dicta? Voluptates explicabo reprehenderit aliquid
-          eligendi quae officiis unde! Eaque, sequi! Deserunt ut neque nesciunt
-          hic totam molestias.
-        </p>
+        <div className='ctn_text'>
+          <h1 style={{ marginBottom: '0' }}>Andy Ozdemir</h1>
+          <h3 style={{ marginTop: '0', marginBottom: '0' }}>
+            Developpeur front-end
+          </h3>
+          <p style={{ fontSize: 'large' }}>
+            Developpeur depuis 2017, je me suis specilisé dans le front-end
+          </p>
+        </div>
         <div className='div_img_presentation'>
           <img src={logo} />
         </div>

@@ -9,6 +9,11 @@ function Footer() {
           Mentions légales
         </a>
       </Link>
+      <Link to='politique_de_confidentialite'>
+        <a href='#' style={{ color: 'black' }}>
+          Politique de confidentienlité
+        </a>
+      </Link>
     </footer>
   );
 }

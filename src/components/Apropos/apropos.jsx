@@ -3,7 +3,7 @@ function Apropos() {
     <div
       style={{
         backgroundColor: ' rgba(232, 232, 232, 0.442)',
-        height: '40vh',
+        height: '33vh',
         marginTop: '7vh',
         marginLeft: '-10vw',
         marginRight: '-10vw',

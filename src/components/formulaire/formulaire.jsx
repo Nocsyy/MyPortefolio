@@ -54,7 +54,7 @@ function Form() {
   };
 
   return (
-    <div className='ctn-form'>
+    <div className='ctn-form' id='ctn-form'>
       <h3>Me contacter📲</h3>
       <CopyButton text={'ncs.dev@hotmail.com'} />
       <form>
@@ -118,7 +118,9 @@ function Form() {
         )}
 
         {isSubmitted && (
-          <p style={{ color: 'rgba(42, 170, 42, 0.585)' }}>Demande envoyée !</p>
+          <p style={{ color: 'rgba(42, 170, 42, 0.585)', marginTop: '5vh' }}>
+            Demande envoyée !
+          </p>
         )}
       </div>
     </div>

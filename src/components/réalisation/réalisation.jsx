@@ -31,7 +31,7 @@ function Realisation(props) {
   };
 
   return (
-    <div className='page_rea'>
+    <div className='page_rea' id='realisation'>
       <h3 style={{ color: 'black', textAlign: 'center' }}>
         Mes réalisations :{' '}
       </h3>
@@ -51,8 +51,7 @@ function Realisation(props) {
 
               {hoveredItem && hoveredItem.id === item.id && (
                 <div>
-                  <div className='description'>{item.description}</div>
-                  <div className='langage'>{item.langage}</div>
+                  <h2 className='title_rea'>{item.title}</h2>
                 </div>
               )}
             </div>

@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 function MentionLegales() {
   return (
     <div
@@ -58,7 +60,10 @@ function MentionLegales() {
         personnelles collectées sur le site. Les données personnelles sont
         traitées conformément aux dispositions de la législation en vigueur.
         Pour plus d'informations sur la collecte et le traitement des données
-        personnelles, veuillez consulter notre politique de confidentialité.
+        personnelles, veuillez consulter notre{' '}
+        <Link to='/politique_de_confidentialite'>
+          <a href='#'>politique de confidentialité.</a>
+        </Link>
       </p>
 
       <h2>6. Juridiction compétente</h2>
