@@ -1,0 +1,55 @@
+[
+    {
+        "id": "0",
+        "img": "img.png",
+        "img_carroussel": ["imgBluel1.png", "imgBluel2.png", "imgBluel3.png"],
+        "title": "Sophie Bluel",
+        "description": "Site pour une architecte d'interieur pour qu'elle puisse diffuser ses réalisations",
+        "langage": "JavaScript - Html -Css",
+        "url": "https://github.com/Nocsyy/op3",
+        "techno":["Html", "CSS", "JavaScript"],
+        "mission" : "Création d'un portfolio dynamique pour une architecte d'interieur, ce site lui permet d'ajouter et de supprimer des photos pour exposer son travail. Un formulaire de contacte est présent afin qu'elle puisse être contactée .",
+        "contrainte" : "Créer un site dynamique ", 
+        "solution" : "/ Utiliser Js "
+    },
+    {
+        "id": "1",
+        "img": "kasa.png",
+        "img_carroussel":["imgKasa1.png","imgKasa2.png","imgKasa3.png","imgKasa4.png"],
+        "title": "Kasa",
+        "description": "Notation de logement de particulier",
+        "langage" : "React",
+        "url": "https://github.com/Nocsyy/ocP6",
+        "techno":["React"],
+        "mission" : "Création d'un site dynamique. L'objectif était de récupéerer les logements ajouté par les utilisateurs, respecter la maquettes Figma et le responsive, gerer react router et gérer fetch.",
+        "contrainte" : "Connecter le fichier json ", 
+        "solution" : "/ React"
+    },
+    {
+        "id": "2",
+        "img": "Booki.png",
+        "img_carroussel":["imgBooki1.png", "imgBooki2.png"],
+        "title": "Booki",
+        "description": "Hebergement de locagement de vacances",
+        "langage" : "Html - Css",
+        "url": "https://github.com/Nocsyy/Projet-p2-oc",
+        "url_site": "https://nocsyy.github.io/projetOC2-booki/",
+        "techno":["Html ", "CSS"],
+        "mission" : "Création d'un site simple en html et css. Il présente des hébergements et des activités de vacances ", 
+        "contrainte" : "Aucun",
+        "solution" : "/ Aucun"
+    },
+    {
+        "id": "3",
+        "img": "monvieuxgrimoire.png",
+        "img_carroussel":["monvieuxgrimoire1.png", "monvieuxgrimoire2.png", "monvieuxgrimoire3.png", "monvieuxgrimoire4.png", "monvieuxgrimoire5.png"],
+        "title": "Mon vieux grimoire",
+        "description": "Notation de livre",
+        "langage" : "React - mangoDb - Express",
+        "url": "https://github.com/Nocsyy/OpP7",
+        "techno":["React ", "MangoDB", "Express"],
+        "mission" : "Création d'un site pour qui permet de noter des livres, les utilisateur vont pouvoir s'inscrire et se connecter.",
+        "contrainte" : "Connecter MangoDB",
+        "Solution" : "Express"
+    }
+]
