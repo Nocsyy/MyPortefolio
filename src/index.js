@@ -7,7 +7,7 @@ import Acceuil from './pages/acceuil';
 import Presentation from './components/presentation/presentation';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Realisation from './components/réalisation/réalisation';
-import Formulaire from './components/formulaire/formulaire';
+import Form from './components/formulaire/formulaire';
 import Footer from './components/footer/footer';
 import MentionLegales from './components/mentions/mentions';
 import Politiqueconfidentialite from './components/mentions/politiqueconfidentialite';
@@ -16,13 +16,12 @@ import Politiqueconfidentialite from './components/mentions/politiqueconfidentia
 ReactDOM.render(
   <BrowserRouter>
     <Navigation />
-
+    <Presentation />
+    <Realisation />
+    <Form />
     <Routes>
-      <Route exact path='/' element={<Acceuil />} />
-      <Route exact path='/réalisation' />
-      <Route exact path='/contact' />
-      <Route exact path='/mention_legale' element={<MentionLegales />} />
-      <Route exact path='/politique_de_confidentialite' element={<Politiqueconfidentialite />} />
+      <Route exact path='/mention_legale' />
+      <Route exact path='/politique_de_confidentialite' />
     </Routes>
     <Footer />
   </BrowserRouter>,
