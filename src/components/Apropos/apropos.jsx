@@ -11,13 +11,15 @@ function Apropos() {
         paddingRight: '5vw',
       }}
     >
-      <h3 style={{ textAlign: 'center' }}>A propos : </h3>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
-        mollitia aliquid, quas dicta delectus laborum fugiat itaque voluptatibus
-        dolorum ipsam. Deleniti, tenetur perferendis. Explicabo itaque nesciunt
-        voluptatem ratione, error repudiandae!
-      </p>
+      <h3 style={{ textAlign: 'center', paddingTop: '2vh' }}>
+        Technologies maitrisées:{' '}
+      </h3>
+      <h5 style={{ color: 'orange', margin: '5px' }}>Html</h5>
+      <h5 style={{ color: 'blue', margin: '5px' }}>Css</h5>
+      <h5 style={{ color: 'blue', margin: '5px' }}>React</h5>
+      <h5 style={{ color: 'green', margin: '5px' }}>MangoDB</h5>
+      <h5 style={{ color: 'grey', margin: '5px' }}>Express</h5>
+      <h5 style={{ color: 'green', margin: '5px' }}>Node Js</h5>
     </div>
   );
 }

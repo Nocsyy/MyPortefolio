@@ -1,0 +1,59 @@
+.volet {
+    width: 100%;
+    height: 3vh;
+    background-color: #000000;
+    border : none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.ctn-btn-text {
+    width: 100%;
+    height: 3vh;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.icon-volet{
+    margin-top: 0.5vh;
+}
+.btn-about{
+    border: none;
+    background-color: rgba(255, 255, 255, 0);
+    color: white;
+   
+}
+.text-volet{
+    font-family: 'Montserrat';
+    font-weight: 400;
+    margin-left: 2vh;
+}
+
+.ctn-description-about{
+    width: 100%;
+    height: 100%;
+    background-color: #F7F7F7;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+.ctn-description-about span {
+    width: 90%;
+    margin-top: 0;
+    color: #000000;
+    font-family: 'Montserrat';
+    font-weight: 300;
+    font-size: 15px;
+}
+
+@media only screen and (max-width: 1000px){
+    .volet{
+        width: 80vw;
+    }
+}

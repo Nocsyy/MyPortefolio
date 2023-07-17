@@ -1,6 +1,6 @@
 import { hover } from '@testing-library/user-event/dist/hover';
 import React, { useState } from 'react';
-
+import './copyButton.css';
 const CopyButton = ({ text }) => {
   const [isCopied, setIsCopied] = useState(false);
 
@@ -20,8 +20,8 @@ const CopyButton = ({ text }) => {
 
   return (
     <div
+      className='div_copyButton'
       style={{
-        width: '25vw',
         height: '5vh',
         display: 'flex',
         alignItems: 'center',

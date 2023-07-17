@@ -56,7 +56,6 @@ border-radius: 25px;
   
 }
 .ctn-effect-glitch{
-    
     width: 30vw;
     margin: 10vw auto;
 }
@@ -270,3 +269,13 @@ text-align: center;
     }
   }
   
+
+@media only screen and (max-width: 800px) {
+  .title_nav{
+    display: none;
+  }
+  ul {
+    width: 100vw;
+    padding: 0;
+  }
+}

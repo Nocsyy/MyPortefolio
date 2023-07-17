@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import './realisation.css';
 import Carroussel from '../carroussel/ carroussel';
+import Collapse from '../collapse/collapse';
 
 function Realisation(props) {
   const [data, setData] = useState([]);
@@ -78,6 +79,12 @@ function Realisation(props) {
                     {selectedItem.techno.map((tech, index) => (
                       <p key={index}>{tech}</p>
                     ))}
+                  </div>
+                  <div className='div_collapse'>
+                    <Collapse
+                      contrainte={selectedItem.contrainte}
+                      solution={selectedItem.solution}
+                    />
                   </div>
                 </div>
                 <div className='div_url'>

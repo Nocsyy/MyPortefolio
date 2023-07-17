@@ -125,3 +125,12 @@ input{
     border-width: 0 2px 2px 0;
     transform: rotate(45deg);
   }
+
+  @media only screen and (max-width: 600px){
+    form{
+        width: 90vw;
+    }
+    .div_btn_submit{
+        width: 60%;
+    }
+}

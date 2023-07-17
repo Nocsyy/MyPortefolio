@@ -6,13 +6,11 @@ import Footer from '../components/footer/footer';
 
 function Acceuil() {
   return (
-    <div>
-      <body>
-        <Presentation />
-        <Realisation />
-        <Form />
-      </body>
-    </div>
+    <body>
+      <Presentation />
+      <Realisation />
+      <Form />
+    </body>
   );
 }
 

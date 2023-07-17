@@ -33,3 +33,19 @@
     border-radius: 50%;
     object-fit: cover;
 }
+
+
+@media only screen and (max-width: 1000px) {
+   .ctn_img_presentation{
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+   }
+   .div_img_presentation{
+    display: none;
+   }
+   .ctn_text{
+    width: 90%;
+    margin-left: -2.5vw;
+   }
+}

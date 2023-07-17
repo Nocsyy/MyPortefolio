@@ -1,0 +1,9 @@
+.div_copyButton{
+    width: 25vw;
+}
+
+@media only screen and (max-width: 600px){
+    .div_copyButton {
+        width: 80vw;
+    }
+}

@@ -32,7 +32,7 @@
     font-size: 50pt;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1000px) {
     .photoLogement img{
         height: 30vh;
     }
@@ -44,5 +44,19 @@
     }
     .btn-next span, .btn-previous span {
         font-size: 25pt;
+    }
+    .img_carroussel{
+        width: 90vw;
+        height: 25vh;
+    }
+    .img_carroussel img {
+        height: 25vh;
+    }
+    .ctn-btn{
+        width: 90vw;
+        margin-top: 12.5vh;
+    }
+    .btn-previous{
+        margin-right: 1vw;
     }
 }

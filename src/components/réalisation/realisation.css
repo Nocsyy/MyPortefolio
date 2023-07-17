@@ -94,7 +94,7 @@
   display: flex;
   justify-content: space-evenly;
 }
-.div_techno p {
+.div_techno .techno p {
   color: rgb(109, 107, 107);
   width: 7vw;
   font-size: small;
@@ -157,4 +157,70 @@
 .div_go_site a{
   text-decoration: none;
   color: black;
+}
+
+
+@media only screen and (max-width: 1000px){
+  
+   .ctn-data{
+    width:100% ;
+    display: flex;
+    flex-direction: column;
+   }
+   .data{
+    width: 100%;
+   }
+  .modal-content{
+    width: 100vw;
+    height: 100vh;
+    padding: 5px;
+    padding-top: 5vh;
+  }
+  .close{
+    top: 5vh;
+  }
+  .div_row{
+    width: 100%;
+  }
+  .div_next{
+    height: 55vh;
+    flex-flow: column ;
+    margin-top: 3vh;
+    
+  }
+  .div_mission, .div_url{
+    width: 100%;
+  }
+  .div_url{
+    margin-top: 5vh;
+  }
+  .div_techno{
+    width: 100%;
+  }
+  .div_techno .techno p {
+    width: 20vw;
+  }
+  .div_collapse{
+   margin-left: 10vw;
+  }
+  .div_go_site {
+   width: 60vw;
+   text-align: center;
+   margin: 0;
+  }
+  .div_go_site p {
+    margin-left: 90%;
+    width: 100%;
+  }
+  .div_go_site a {
+    width: 100%;
+  }
+  h5{
+    margin-top: 0;
+    margin-bottom: 0vh;
+  }
+  .div_next p{
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+  }
 }
