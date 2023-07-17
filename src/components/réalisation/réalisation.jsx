@@ -80,7 +80,7 @@ function Realisation(props) {
                       <p key={index}>{tech}</p>
                     ))}
                   </div>
-                  <div></div>
+
                   <div className='div_collapse'>
                     <Collapse
                       contrainte={selectedItem.contrainte}
