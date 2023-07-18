@@ -49,7 +49,7 @@ function Realisation(props) {
               onMouseLeave={() => handleItemLeave()}
             >
               <div>
-                <img src={`/asset/${item.img}`} alt={item.title} />
+                <img src={`${item.img}`} alt={item.title} />
 
                 {hoveredItem && hoveredItem.id === item.id && (
                   <div>

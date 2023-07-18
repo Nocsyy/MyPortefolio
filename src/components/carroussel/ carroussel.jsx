@@ -1,5 +1,5 @@
-import { useState, useEffect } from "react";
-import "./carroussel.css";
+import { useState, useEffect } from 'react';
+import './carroussel.css';
 
 function Carroussel(props) {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -19,26 +19,26 @@ function Carroussel(props) {
   }, [props.pictures]);
 
   return (
-    <div className="img_carroussel">
+    <div className='img_carroussel'>
       {props.pictures.map((pic, i) => (
         <img
-          alt=""
+          alt=''
           key={i}
-          src={`/asset/${pic}`}
+          src={`${pic}`}
           style={{
-            display: i === currentImageIndex ? "block" : "none",
+            display: i === currentImageIndex ? 'block' : 'none',
           }}
         ></img>
       ))}
       {props.pictures.length > 1 && (
-        <div className="ctn-btn">
-          <button className="btn-next" onClick={previousImage}>
-            <span className="material-symbols-outlined icon">
+        <div className='ctn-btn'>
+          <button className='btn-next' onClick={previousImage}>
+            <span className='material-symbols-outlined icon'>
               arrow_back_ios
             </span>
           </button>
-          <button className="btn-previous" onClick={nextImage}>
-            <span className="material-symbols-outlined icon">
+          <button className='btn-previous' onClick={nextImage}>
+            <span className='material-symbols-outlined icon'>
               arrow_forward_ios
             </span>
           </button>
