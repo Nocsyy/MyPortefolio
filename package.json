@@ -2,8 +2,11 @@
   "name": "my-site",
   "version": "0.1.0",
   "private": true,
+<<<<<<< HEAD
   "homepage": "https://Nocsyy.github.io/MyPortefolio",
   
+=======
+>>>>>>> b475d39f2004013d35d8d3ffd8fc9cda993838e1
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
