@@ -10,7 +10,7 @@ function Realisation(props) {
   const [hoveredItem, setHoveredItem] = useState(null);
 
   useEffect(() => {
-    fetch('/realisation.json')
+    fetch('https://nocsyy.github.io/db/realisation.json')
       .then((response) => response.json())
       .then((data) => setData(data))
       .catch((error) => console.error(error));
