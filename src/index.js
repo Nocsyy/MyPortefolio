@@ -16,9 +16,7 @@ import Politiqueconfidentialite from './components/mentions/politiqueconfidentia
 ReactDOM.render(
   <BrowserRouter>
     <Navigation />
-    <Presentation />
-    <Realisation />
-    <Form />
+    <Acceuil />
     <Routes>
       <Route exact path='/mention_legale' />
       <Route exact path='/politique_de_confidentialite' />

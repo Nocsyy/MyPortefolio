@@ -37,7 +37,7 @@
 
 @media only screen and (max-width: 1000px) {
    .ctn_img_presentation{
-    width: 90vw;
+    width: 85vw;
     display: flex;
     flex-direction: column;
    }
@@ -45,7 +45,9 @@
     display: none;
    }
    .ctn_text{
-    width: 90%;
+    width: 95%;
     margin-left: -2.5vw;
+    margin-left: -10vw;
+    margin-right: -10vw;
    }
 }
