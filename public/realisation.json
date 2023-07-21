@@ -7,7 +7,7 @@
         "description": "Site pour une architecte d'interieur pour qu'elle puisse diffuser ses réalisations",
         "langage": "JavaScript - Html -Css",
         "url": "https://github.com/Nocsyy/op3",
-        "techno":["Html", "CSS", "js.svg"],
+        "techno":["Html", "CSS", "JavaScript"],
         "mission" : "Création d'un portfolio dynamique pour une architecte d'interieur, ce site lui permet d'ajouter et de supprimer des photos pour exposer son travail. Un formulaire de contacte est présent afin qu'elle puisse être contactée .",
 
     },
