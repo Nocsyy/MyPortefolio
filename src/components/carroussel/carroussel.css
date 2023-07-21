@@ -37,7 +37,7 @@
         height: 30vh;
     }
     .ctn-btn{
-        width: 95vw;
+        width: 80vw;
     }
     .btn-next, .btn-previous{
         margin-top: -30vh;
@@ -46,14 +46,14 @@
         font-size: 25pt;
     }
     .img_carroussel{
-        width: 90vw;
+        width: 80vw;
         height: 25vh;
     }
     .img_carroussel img {
         height: 25vh;
     }
     .ctn-btn{
-        width: 90vw;
+        width: 80vw;
         margin-top: 12.5vh;
     }
     .btn-previous{

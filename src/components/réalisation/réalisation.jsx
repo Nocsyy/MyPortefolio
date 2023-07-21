@@ -81,13 +81,6 @@ function Realisation(props) {
                         <p key={index}>{tech}</p>
                       ))}
                     </div>
-
-                    <div className='div_collapse'>
-                      <Collapse
-                        contrainte={selectedItem.contrainte}
-                        solution={selectedItem.solution}
-                      />
-                    </div>
                   </div>
                   <div className='div_url'>
                     <h5>GitHub : </h5>

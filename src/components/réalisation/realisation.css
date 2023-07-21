@@ -171,8 +171,8 @@
     width: 100%;
    }
   .modal-content{
-    width: 100vw;
-    height: 100vh;
+    width: 80vw;
+    height: 75vh;
     padding: 5px;
     padding-top: 5vh;
   }
@@ -183,7 +183,7 @@
     width: 100%;
   }
   .div_next{
-    height: 55vh;
+    height: 35vh;
     flex-flow: column ;
     margin-top: 3vh;
     
@@ -207,13 +207,16 @@
    width: 60vw;
    text-align: center;
    margin: 0;
+   
   }
   .div_go_site p {
-    margin-left: 90%;
+    margin-left: 70%;
     width: 100%;
+    
   }
   .div_go_site a {
     width: 100%;
+    
   }
   h5{
     margin-top: 0;

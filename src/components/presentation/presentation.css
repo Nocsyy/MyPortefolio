@@ -37,17 +37,17 @@
 
 @media only screen and (max-width: 1000px) {
    .ctn_img_presentation{
-    width: 85vw;
+    width: 95vw;
     display: flex;
+    align-items: center;
     flex-direction: column;
    }
    .div_img_presentation{
     display: none;
    }
    .ctn_text{
-    width: 95%;
-    margin-left: -2.5vw;
-    margin-left: -10vw;
-    margin-right: -10vw;
+    width: 80%;
+    margin-top: 10vh;
+   
    }
 }

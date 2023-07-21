@@ -4,8 +4,6 @@
     justify-content: center;
     flex-direction: column;
     background-color: rgba(232, 232, 232, 0.442);
-    margin-left: -10vw;
-    margin-right: -10vw;
     margin-top: 5vh;
     
 }
@@ -126,7 +124,7 @@ input{
     transform: rotate(45deg);
   }
 
-  @media only screen and (max-width: 600px){
+  @media only screen and (max-width: 1000px){
     form{
         width: 90vw;
     }
