@@ -1,9 +1,12 @@
-
+#realisation {
+  padding-top: 10vh;
+}
 .ctn-data {
   display: flex;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
   width: 100%;
   justify-content: space-evenly;
+  
 }
 
 .data {
@@ -11,7 +14,7 @@
   cursor: pointer;
   border-radius: 10px;
   position: relative;
-  width: 45%;
+  width: 45vw;
   height: 35vh;
   box-shadow:0px 0px 12px 0px rgba(86, 86, 86, 0.172);
 }
@@ -46,6 +49,8 @@
   justify-content: center;
   align-items: center;
   z-index: 4;
+    
+  
 }
 
 .modal-content {
@@ -143,29 +148,11 @@
   border: 0.5px solid rgba(128, 128, 128, 0.323);
 }
 
-.div_go_site{
-  width: 8vw;
-  margin-top: -5px;
-  margin-left: 90%;
-  padding: 3px;
-}
-.div_go_site p {
-  margin: 0;
-  margin-top: 4vh;
-}
-
-.div_go_site a{
-  text-decoration: none;
-  color: black;
-}
-
-
 @media only screen and (max-width: 1000px){
   
    .ctn-data{
-    width:100% ;
-    display: flex;
-    flex-direction: column;
+    width: 100%;
+  
    }
    .data{
     width: 100%;
@@ -203,21 +190,7 @@
   .div_collapse{
    margin-left: 10vw;
   }
-  .div_go_site {
-   width: 60vw;
-   text-align: center;
-   margin: 0;
-   
-  }
-  .div_go_site p {
-    margin-left: 70%;
-    width: 100%;
-    
-  }
-  .div_go_site a {
-    width: 100%;
-    
-  }
+  
   h5{
     margin-top: 0;
     margin-bottom: 0vh;

@@ -1,32 +1,42 @@
 p, h1, h2, h3, h4, h5 {
   font-family: 'Montserrat';
 }
+
+#root, html{
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+}
 header{
-  width: 101vw;
+  width: 100vw;
+  margin-left: -0.5vw;
   height: 10vh;
   z-index: 3;
   display: flex;
   text-align: center;
   position: fixed;
   margin-top: -10vh;
-  margin-left: -1vw;
-  margin-right: -1vw;
+  border-bottom: 0.5px solid;
 }
 
 body { 
   background-color: rgba(255, 255, 255, 0.415);
   margin-top: 10vh;
-  margin-bottom: 0;
+  overflow: hidden;
+  margin-left: 0;
+  margin-right: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Montserrat',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
 }
 footer{
-  height: 15vh;
+  height: 40vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  
 }
 

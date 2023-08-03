@@ -7,12 +7,12 @@
     align-items: center;
     list-style: none;
     background-color: rgb(255, 255, 255);
-    border-bottom: 0.5px solid;
+    
 }
 
 
 ul{
-  width: 25vw;
+  width: 35vw;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -44,18 +44,21 @@ border-radius: 25px;
   
 }
 .ctn-effect-glitch{
-    width: 30vw;
+    width: 35vw;
     margin: 10vw auto;
 }
+
+.ctn_icon_navigation a {
+  color: black;
+}
 .nav .title_nav{
-text-align: center;
+  text-align: center;
   color: rgb(97, 97, 97);
   font-size: 2em;
   letter-spacing: 8px;
   font-family: 'Press Start 2P';
   font-weight: 400;
   /*Create overlap*/
-  
   margin: 0;
   line-height: 0;
   padding-left: 5vw;
@@ -73,11 +76,9 @@ text-align: center;
     font-family: 'Press Start 2P';
     font-weight: 400;
     /*Create overlap*/
-    
     margin: 0;
     line-height: 0;
     /*Animation*/
-    
     animation: glitch1 2.5s infinite;
   }
   
@@ -90,8 +91,24 @@ text-align: center;
     color: #f16f6f;
     animation: glitch3 2.5s infinite;
   }
-  /*Keyframes*/
   
+  /*Keyframes*/
+  @keyframes anchorAnimation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Apply the animation to the links */
+nav ul a {
+  animation: anchorAnimation 1s ease;
+}
   @keyframes glitch1 {
     0% {
       transform: none;

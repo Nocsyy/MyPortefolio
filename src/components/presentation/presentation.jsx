@@ -1,28 +1,31 @@
 import './presentation.css';
-import logo from './me.png';
+
 import Apropos from '../Apropos/apropos';
 
 function Presentation() {
   return (
-    <body>
-      <div style={{ height: '90vh' }} className='ctn_presentation'>
-        <div className='ctn_img_presentation'>
-          <div className='ctn_text'>
-            <h1 style={{ marginBottom: '0' }}>Andy Ozdemir</h1>
-            <h3 style={{ marginTop: '0', marginBottom: '0' }}>
-              Developpeur front-end
-            </h3>
-            <p style={{ fontSize: 'large' }}>
-              Developpeur depuis 2017, je me suis spécialisé dans le front-end
+    <section id='presentation'>
+      <div style={{ height: '90vh' }} className='ctn_about'>
+        <div className='ctn_text'>
+          <div className='ctn_text_name'>
+            <h2>Bonjour, je suis Andy Ozdemir</h2>
+          </div>
+          <div className='text_background'>
+            <h4>Developpeur web front-end</h4>
+          </div>
+          <div>
+            <p>
+              Développeur web junior, déterminé à résoudre les défis les plus
+              stimulants. Toujours en quête d'innovation, prêt à collaborer pour
+              créer des solutions numériques exceptionnelles.
             </p>
           </div>
-          <div className='div_img_presentation'>
-            <img src={logo} />
-          </div>
         </div>
-        <Apropos />
+        <div class='middle'>
+          <div class='mouse'></div>
+        </div>
       </div>
-    </body>
+    </section>
   );
 }
 
