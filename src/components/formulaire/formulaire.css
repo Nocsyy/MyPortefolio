@@ -16,11 +16,9 @@
     font-weight: 500;
 }
 
-.ctn-form h3{
+.ctn-form h2{
     color: rgb(106, 102, 102);
     margin-top: 0;
-    margin-bottom: 0;
-    font-size: x-large;
     margin-left: auto;
     margin-right: auto;
 }
@@ -89,44 +87,11 @@ input{
 }
 
 .btn_submit:hover{
-    background-color: rgba(42, 170, 42, 0.585);
+    background-color: #2ECC71;
     color: white;
     font-family: 'Montserrat';
 
 }
-.checkmark {
-    position: relative;
-    z-index: 2;
-    display: inline-block;
-    align-items: center;
-    margin-top: 3vh;
-    width: 2vw;
-    height: 2vw;
-  }
-  
-  .checkmark__circle {
-    border-radius: 50%;
-    border: 2px solid rgba(42, 170, 42, 0.585);
-    position: absolute;
-    box-sizing: content-box;
-    top: 0;
-    left: 0;
-    width: 2vw;
-    height: 2vw;
-  }
-  
-  .checkmark__check {
-    position: absolute;
-    box-sizing: content-box;
-    top:0.3vw;
-    left: 0.75vw;
-    width: 0.6vw;
-    height: 1.3vw;
-    border: solid rgba(42, 170, 42, 0.585);
-    border-width: 0 2px 2px 0;
-    transform: rotate(45deg);
-  }
-
   @media only screen and (max-width: 1000px){
     form{
         width: 90vw;

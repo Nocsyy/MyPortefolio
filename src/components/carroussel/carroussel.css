@@ -1,26 +1,25 @@
 .img_carroussel {
-    width: 50vw;
-    height: 35vh;
-    border : 0.5px solid rgba(0, 0, 0, 0.254);
+    width: 60vw;
+    height: 50vh;
+    border-radius: 25px;
+    box-shadow:0px 0px 12px 0px rgba(86, 86, 86, 0.172);
 }
 .img_carroussel img{
     object-fit: cover;
     width: 100%;
-    height: 35vh;
+    height: 50vh;
+    border-radius: 25px;
     
 }
 .ctn-btn{
     display: flex;
     justify-content: space-between;
-    margin-top: -20vh;
+    margin-top: -28vh;
     height: 10vh;
     width: 100%;
- 
-
-
 }
 .btn-next, .btn-previous{
-    width: 10%;
+    width: 5vw;
     height: 100%;
     margin: 0;
     background-color: rgba(255, 255, 255, 0);
@@ -29,7 +28,7 @@
     
 }
 .btn-next span, .btn-previous span{
-    font-size: 50pt;
+    
 }
 
 @media only screen and (max-width: 1000px) {

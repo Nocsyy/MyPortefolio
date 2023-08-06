@@ -11,10 +11,12 @@ function Apropos() {
         style={{
           textAlign: 'center',
           paddingTop: '2vh',
+          color: 'rgb(106, 102, 102)',
         }}
       >
         Un peu plus sur moi
       </h2>
+      <div className='line_about'></div>
       <div className='section_about'>
         <div className='ctn_presentation'>
           <h3
@@ -98,7 +100,7 @@ function Apropos() {
             </div>
             <div>
               <h5 style={{ color: 'green', margin: '5px', fontSize: '2rem' }}>
-                MangoDB
+                Mango
               </h5>
             </div>
             <div>

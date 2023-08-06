@@ -11,7 +11,7 @@ function Presentation() {
             <h2>Bonjour, je suis Andy Ozdemir</h2>
           </div>
           <div className='text_background'>
-            <h4>Developpeur web front-end</h4>
+            <h4 style={{ color: '#2ECC71' }}>Developpeur web front-end</h4>
           </div>
           <div>
             <p>

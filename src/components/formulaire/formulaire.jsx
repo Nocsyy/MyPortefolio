@@ -56,7 +56,8 @@ function Form() {
   return (
     <section id='contact'>
       <div className='ctn-form' id='ctn-form'>
-        <h3>Me contacter📲</h3>
+        <h2>Me contacter📲</h2>
+        <div className='line_about'></div>
         <CopyButton text={'ncs.dev@hotmail.com'} />
         <form>
           <label>Mail :</label>
@@ -112,14 +113,7 @@ function Form() {
               Envoyer
             </button>
           ) : (
-            <div className='checkmark'>
-              <span className='checkmark__circle'></span>
-              <span className='checkmark__check'></span>
-            </div>
-          )}
-
-          {isSubmitted && (
-            <p style={{ color: 'rgba(42, 170, 42, 0.585)', marginTop: '5vh' }}>
+            <p style={{ color: '#2ECC71', marginTop: '5vh' }}>
               Demande envoyée !
             </p>
           )}

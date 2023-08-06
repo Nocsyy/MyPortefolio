@@ -6,7 +6,7 @@
   flex-flow: row wrap;
   width: 100%;
   justify-content: space-evenly;
-  
+  margin-top: 5vh;
 }
 
 .data {
@@ -28,7 +28,6 @@
 .title_rea {
   width: 100%;
   margin-top: -20vh;
-  font-size: 25px;
   text-align: center;
   color: rgb(255, 255, 255);
   position: absolute;
@@ -37,81 +36,15 @@
   
 }
 
-.modal {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0.5);
-  backdrop-filter: blur(5px);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 4;
-    
-  
-}
-
-.modal-content {
-  background-color: #fff;
-  padding: 20px;
-  width: 70vw;
-  height: 65vh;
-  text-align: center;
-  position: relative;
-
-}
-
-.close {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  font-size: 24px;
-  cursor: pointer;
-}
-.div_row{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.title_rea_modal{
-  margin: 0;
-  margin-bottom: 15px;
-  color: black;
-}
-.div_next{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  width: 100%;
-  height: 18vh;
-}
-.div_mission, .div_techno, .div_url {
-  width: 32%;
-}
-.div_mission p{
-  text-align: left;
-  color: rgb(109, 107, 107);
-  font-size: small;
-}
-.techno{
-  display: flex;
-  justify-content: space-evenly;
-}
-.div_techno .techno p {
-  color: rgb(109, 107, 107);
-  width: 7vw;
-  font-size: small;
-  padding-top: 3px;
-  padding-bottom: 3px;
-  border: 1.5px solid rgb(109, 107, 107);
+.line_rea{
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #2ECC71;
+  width: 10vw;
+  height: 0.5vh;
   border-radius: 20px;
 }
-.url{
-  color: black;
-  font-size: xx-large;
-}
+
 .data:hover {
   cursor: pointer;
 }

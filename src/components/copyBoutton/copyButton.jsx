@@ -37,7 +37,7 @@ const CopyButton = ({ text }) => {
       ) : (
         <span
           style={{
-            color: ' rgba(42, 170, 42, 0.585)',
+            color: '#2ECC71',
             fontFamily: 'Montserrat',
             fontWeight: '500',
           }}
@@ -55,7 +55,10 @@ const CopyButton = ({ text }) => {
           color: 'rgba(50, 50, 50, 0.635)',
         }}
       >
-        <i class='fa-solid fa-copy' style={{ fontSize: 'large' }}></i>
+        <i
+          class='fa-solid fa-copy icon_copy_mail'
+          style={{ fontSize: 'large' }}
+        ></i>
       </button>
     </div>
   );

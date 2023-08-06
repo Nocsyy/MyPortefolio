@@ -1,3 +1,17 @@
+.menu-bar {
+  position: absolute;
+  bottom: 0;
+  height: 3px;
+  background-color: #2ecc71;
+  transition: all 0.3s ease-in-out;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.menu-bar.show {
+  opacity: 1;
+  visibility: visible;
+}
 
 .nav{
     width: 100vw;
@@ -9,8 +23,6 @@
     background-color: rgb(255, 255, 255);
     
 }
-
-
 ul{
   width: 35vw;
   display: flex;
@@ -22,15 +34,13 @@ ul{
   list-style: none;
   font-size: 1.2em;
   padding: 0.8vh;
-  border-radius: 25px;
-  background-color: transparent;
+ 
   transition: background-color 0.5s ease;
 }
 
 .nav li:hover{
-color: rgb(255, 255, 255);
-background-color: #f16f6f;
-border-radius: 25px;
+color: #2ECC71;
+
 
 }
 .nav a {

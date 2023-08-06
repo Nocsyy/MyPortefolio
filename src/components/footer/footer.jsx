@@ -37,17 +37,7 @@ function Footer() {
         <div className='line_footer'></div>
       </div>
       <div className='ctn_copyright'>
-        <p> © Réalisé par Andy OZDEMIR</p>
-        <Link to='/mention_legale'>
-          <a href='#' style={{ color: 'black' }}>
-            Mentions légales
-          </a>
-        </Link>
-        <Link to='politique_de_confidentialite'>
-          <a href='#' style={{ color: 'black' }}>
-            Politique de confidentienlité
-          </a>
-        </Link>
+        <p> © 2023 Réalisé par Andy OZDEMIR</p>
       </div>
     </footer>
   );

@@ -15,7 +15,7 @@ function Carroussel(props) {
   };
 
   useEffect(() => {
-    setCurrentImageIndex(0); // Réinitialise l'index de l'image lorsque les images changent
+    setCurrentImageIndex(0);
   }, [props.pictures]);
 
   return (
@@ -24,7 +24,7 @@ function Carroussel(props) {
         <img
           alt=''
           key={i}
-          src={`${pic}`}
+          src={pic}
           style={{
             display: i === currentImageIndex ? 'block' : 'none',
           }}

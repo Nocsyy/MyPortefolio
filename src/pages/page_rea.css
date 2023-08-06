@@ -1,0 +1,74 @@
+.page_realisation {
+    min-height: 90vh;
+}
+
+.btn_back{
+    border:none;
+    background-color: rgba(0, 0, 0, 0);
+    margin-left: 5%;
+}
+.btn_back{
+    font-size: xx-large;
+    color: #2ECC71;
+}
+.ctn_rea{
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.ctn_title_desc{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.ctn_title_desc h3{
+    margin-bottom: 0;
+}
+.ctn_title_desc p{
+    margin-top: 0;
+}
+.ctn_techno_img_url{
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.ctn_techno_url{
+    width: 25vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.div_techno h5, .div_url h5, .div_mission h5{
+    text-align: center;
+}
+.div_url{
+    text-align: center;
+}
+.techno{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+  }
+  .div_techno .techno p {
+    color: #2ECC71;
+    width: 7vw;
+    font-size: small;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    border: 1.5px solid #2ECC71;
+    border-radius: 20px;
+  }
+  .div_mission p {
+    color: rgb(106, 102, 102);
+    font-size: 15px;
+  }
+  .url{
+    color: black;
+    font-size: xx-large;
+   
+  }

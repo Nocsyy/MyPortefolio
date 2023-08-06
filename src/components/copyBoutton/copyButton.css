@@ -1,6 +1,9 @@
 .div_copyButton{
     width: 25vw;
 }
+.div_copyButton button i:hover{
+    color: #2ECC71;
+}
 
 @media only screen and (max-width: 600px){
     .div_copyButton {
