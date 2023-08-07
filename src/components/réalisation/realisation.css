@@ -1,5 +1,5 @@
 #realisation {
-  padding-top: 10vh;
+  padding-top: 7vh;
 }
 .ctn-data {
   display: flex;
@@ -8,7 +8,9 @@
   justify-content: space-evenly;
   margin-top: 5vh;
 }
-
+.lien_data{
+  width: -10vw;
+}
 .data {
   margin: 10px;
   cursor: pointer;
@@ -58,7 +60,7 @@
 }
 
 .data a {
-  width: 100%;
+  width: 100vw;
 }
 
 .data p {
@@ -84,11 +86,14 @@
 @media only screen and (max-width: 1000px){
   
    .ctn-data{
-    width: 100%;
+    width: 100vw;
   
    }
    .data{
-    width: 100%;
+    width: 100vw;
+   }
+   .data img{
+    width:100%;
    }
   .modal-content{
     width: 80vw;

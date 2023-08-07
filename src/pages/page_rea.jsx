@@ -11,7 +11,7 @@ function PageRea() {
   const { id } = useParams();
   const handleRedirect = () => {
     // Redirection vers la page d'accueil
-    navigate('/');
+    navigate('/MyPortefolio');
 
     // Effectuer le défilement jusqu'à la section des réalisations après un court délai
     setTimeout(() => {
@@ -38,7 +38,7 @@ function PageRea() {
   }, [id, navigate]);
 
   return (
-    <section className='page_realisation'>
+    <section className='page_realisation' style={{ marginTop: '-10vh' }}>
       {realisation && (
         <div className='ctn_rea'>
           <div className='ctn_title_desc'>

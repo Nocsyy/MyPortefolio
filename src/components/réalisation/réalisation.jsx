@@ -34,7 +34,6 @@ function Realisation(props) {
 
   return (
     <section id='realisation'>
-      $
       <h2
         style={{
           color: 'rgb(106, 102, 102)',
@@ -47,30 +46,29 @@ function Realisation(props) {
       <div className='line_rea'></div>
       <div className='ctn-data'>
         {rea.map((rea, index) => (
-          <Link
-            className='lien_data'
-            to={'/realisation/' + rea.id}
-            onClick={handleLinkClick}
+          <div
+            className={`data ${
+              hoveredItem && hoveredItem.id === rea.id ? 'hovered' : ''
+            }`}
+            key={rea.id}
+            onMouseEnter={() => handleItemHover(rea)}
+            onMouseLeave={() => handleItemLeave()}
           >
-            <div
-              className={`data ${
-                hoveredItem && hoveredItem.id === rea.id ? 'hovered' : ''
-              }`}
-              key={rea.id}
-              onMouseEnter={() => handleItemHover(rea)}
-              onMouseLeave={() => handleItemLeave()}
-            >
-              <div>
+            <div>
+              <Link
+                className='lien_data'
+                to={'/realisation/' + rea.id}
+                onClick={handleLinkClick}
+              >
                 <img src={`${rea.img}`} alt={rea.title} />
-
-                {hoveredItem && hoveredItem.id === rea.id && (
-                  <div>
-                    <h2 className='title_rea'>{rea.title}</h2>
-                  </div>
-                )}
-              </div>
+              </Link>
+              {hoveredItem && hoveredItem.id === rea.id && (
+                <div>
+                  <h2 className='title_rea'>{rea.title}</h2>
+                </div>
+              )}
             </div>
-          </Link>
+          </div>
         ))}
       </div>
     </section>

@@ -1,5 +1,5 @@
 .page_realisation {
-    min-height: 90vh;
+    min-height: 100vh;
 }
 
 .btn_back{
@@ -12,7 +12,7 @@
     color: #2ECC71;
 }
 .ctn_rea{
-    height: 80vh;
+    height: 90vh;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -71,4 +71,26 @@
     color: black;
     font-size: xx-large;
    
+  }
+
+
+@media only screen and (max-width: 1000px) {
+    .ctn_rea{
+        text-align: center;
+    }
+    .ctn_techno_img_url{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .ctn_techno_url{
+        width: 95vw;
+    }
+    .div_techno, .div_url, .div_mission{
+        margin-top: 3vh;
+    }
+    .div_techno .techno p {
+        width: 25vw;
+    }
+  
   }
