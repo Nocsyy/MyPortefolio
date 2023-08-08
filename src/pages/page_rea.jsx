@@ -51,9 +51,7 @@ function PageRea() {
               {realisation.title}
             </h3>
             <p>
-              <i style={{ color: 'rgb(106, 102, 102)', fontSize: '12px' }}>
-                {realisation.description}
-              </i>
+              <i style={{ fontSize: '12px' }}>{realisation.description}</i>
             </p>
           </div>
           <div className='ctn_techno_img_url'>

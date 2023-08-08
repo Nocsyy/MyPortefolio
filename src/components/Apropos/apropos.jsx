@@ -1,17 +1,11 @@
 import './apropos.css';
 function Apropos() {
   return (
-    <section
-      id='about'
-      style={{
-        backgroundColor: ' rgba(232, 232, 232, 0.442)',
-      }}
-    >
+    <section id='about'>
       <h2
         style={{
           textAlign: 'center',
           paddingTop: '2vh',
-          color: 'rgb(106, 102, 102)',
         }}
       >
         Un peu plus sur moi

@@ -36,7 +36,6 @@ function Realisation(props) {
     <section id='realisation'>
       <h2
         style={{
-          color: 'rgb(106, 102, 102)',
           textAlign: 'center',
           fontFamily: 'lato',
         }}

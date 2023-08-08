@@ -7,6 +7,7 @@ p, h1, h2, h3, h4, h5 {
   margin: 0;
   padding: 0;
 }
+
 header{
   width: 100vw;
   height: 10vh;
@@ -16,6 +17,7 @@ header{
   position: fixed;
   margin-top: -10vh;
   border-bottom: 0.5px solid;
+  background-color: rgb(255, 255, 255);
 }
 
 body { 
@@ -32,12 +34,45 @@ body {
 }
 footer{
   height: 35vh;
-  background-color: rgb(0, 0, 0);
-  color: white;
+  background-color: rgb(41, 41, 41);
+  color:#eee;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
   
+}
+
+:root {
+  --font-color:#333;
+  --background-color: white;
+  --link-color: cornflowerblue;
+  
+}
+
+/* 2 */
+
+[data-theme="dark"] {
+  --font-color: #eee;
+  --background-color: #333;
+  --back_color:rgb(41, 41, 41);
+  --link-color: lightblue;
+}
+
+/* 3 */
+
+body {
+  background-color: var(--background-color);
+  color: var(--font-color);
+}
+.nav{
+  background-color: var(--back_color);
+}
+ i, h2, li, a, .line, .label { 
+  color: var(--font-color);
+}
+
+.mouse{
+  border-color: var(--font-color);
 }
 

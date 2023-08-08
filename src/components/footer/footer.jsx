@@ -18,16 +18,21 @@ function Footer() {
             <a
               href='https://www.linkedin.com/in/andy-ozdemir-942265273/'
               target='_blank'
+              rel='noreferrer'
             >
               <i
                 class='fa-brands fa-linkedin'
-                style={{ color: '#000000;', fontSize: 'x-large' }}
+                style={{ color: 'white', fontSize: 'x-large' }}
               ></i>
             </a>
-            <a href='https://github.com/Nocsyy' target='_blank'>
+            <a
+              href='https://github.com/Nocsyy'
+              target='_blank'
+              rel='noreferrer'
+            >
               <i
                 class='fa-brands fa-github'
-                style={{ color: '#000000;', fontSize: 'x-large' }}
+                style={{ color: 'white', fontSize: 'x-large' }}
               ></i>
             </a>
           </div>

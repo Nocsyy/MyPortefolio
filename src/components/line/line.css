@@ -1,0 +1,47 @@
+.ctn_first_line {
+    width: 100vw;
+    height: 1vh;
+    display: flex;
+    align-items: center;
+}
+
+.line_separated {
+    width: 0;
+    height: 0.5vh;
+    border-radius: 1vh;
+    background-color: #2ECC71;
+    margin-left: auto;
+    margin-right: auto;
+    animation: stretchAndColor 7s linear infinite; /* Use the animation */
+}
+
+@keyframes stretchAndColor {
+    0% {
+        width: 0;
+        background-color: #2ecc707b;
+    }
+    50% {
+        width: 90vw;
+        background-color: #2ecc7099;
+    }
+    100% {
+        width: 0;
+        background-color: #2ECC71;
+    }
+}
+
+/* Ajout des préfixes de navigateur */
+@-webkit-keyframes stretchAndColor {
+    0% {
+        width: 0;
+        background-color: #2ECC71;
+    }
+    50% {
+        width: 90vw;
+        background-color: #3498db;
+    }
+    100% {
+        width: 0;
+        background-color: #2ECC71;
+    }
+}

@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Link as ScrollLink, animateScroll as scroll } from 'react-scroll';
 import './navigation.css';
-
+import Dark_mode from '../darkMode/darkMode';
 function Navigation() {
   const [activeSection, setActiveSection] = useState('');
   const [barPosition, setBarPosition] = useState(0);
@@ -90,6 +90,7 @@ function Navigation() {
                 </li>
               </ScrollLink>
             </ul>
+            <Dark_mode />
             {/* Menu bar */}
             <div
               className={`menu-bar ${barPosition === 0 ? '' : 'show'}`}
