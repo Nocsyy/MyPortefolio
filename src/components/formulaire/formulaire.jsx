@@ -97,7 +97,7 @@ function Form() {
               textAlign: 'center',
               marginTop: '5vh',
               fontWeight: '500',
-              color: 'rgba(170, 42, 42, 0.585)',
+              color: 'rgba(212, 17, 17, 0.852)',
             }}
           >
             🚧 Veuillez remplir tous les champs du formulaire.
