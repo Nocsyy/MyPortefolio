@@ -20,7 +20,9 @@
     justify-content: space-between;
     align-items: center;
     list-style: none;
-    background-color: rgb(255, 255, 255);
+    
+    
+  
     
 }
 ul{
@@ -30,7 +32,6 @@ ul{
   justify-content: space-around;
 }
 .nav li {
-  color: rgba(0, 0, 0, 0.58);
   list-style: none;
   font-size: 1.2em;
   padding: 0.8vh;
