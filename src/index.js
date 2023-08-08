@@ -7,6 +7,7 @@ import Footer from './components/footer/footer';
 import PageRea from './pages/page_rea';
 import Error from './components/error/error';
 import { createRoot } from 'react-dom/client';
+import Btn_Up from './components/btnUp/btnUp';
 
 const root = createRoot(document.getElementById("root"));
 root.render(
@@ -22,6 +23,7 @@ root.render(
 );
 
 function AcceuilWithFooterAndNavigation() {
+
   return (
     <div>
       <Navigation />

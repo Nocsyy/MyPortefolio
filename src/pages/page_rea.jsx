@@ -39,10 +39,17 @@ function PageRea() {
 
   return (
     <section className='page_realisation' style={{ marginTop: '-10vh' }}>
+      <div className='ctn_btn_back'>
+        <button onClick={handleRedirect} className='btn_back'>
+          <i class='fa-solid fa-arrow-left'></i>
+        </button>
+      </div>
       {realisation && (
         <div className='ctn_rea'>
           <div className='ctn_title_desc'>
-            <h3 className='title_page_rea'>{realisation.title}</h3>
+            <h3 className='title_page_rea' style={{ fontSize: 'x-large' }}>
+              {realisation.title}
+            </h3>
             <p>
               <i style={{ color: 'rgb(106, 102, 102)', fontSize: '12px' }}>
                 {realisation.description}
@@ -79,11 +86,6 @@ function PageRea() {
           </div>
         </div>
       )}
-      <div className='ctn_btn_back'>
-        <button onClick={handleRedirect} className='btn_back'>
-          <i class='fa-solid fa-arrow-left'></i>
-        </button>
-      </div>
     </section>
   );
 }

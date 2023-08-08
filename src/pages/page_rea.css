@@ -3,14 +3,15 @@
 }
 
 .btn_back{
+    position: fixed;
     border:none;
     background-color: rgba(0, 0, 0, 0);
+    margin-top: 5%;
     margin-left: 5%;
-}
-.btn_back{
-    font-size: xx-large;
+    font-size: x-large;
     color: #2ECC71;
 }
+
 .ctn_rea{
     height: 90vh;
     display: flex;
