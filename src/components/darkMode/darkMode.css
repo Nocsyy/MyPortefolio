@@ -1,9 +1,13 @@
-    
+    .ctn_btn_dark{
+      align-items: center;
+    }
     .ctn_btn_dark input[type=checkbox]{
         display: none;
     }
     .ctn_btn_dark label{
+     
         font-size: 3vh;
+        
     }
     
     

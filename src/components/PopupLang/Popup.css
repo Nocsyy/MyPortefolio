@@ -23,13 +23,6 @@
   -moz-appearance: none;
   appearance: none;
 }
-
-
-
-.popup-content button:hover {
-  background-color: #2ECC71;
-}
-
 @media only screen and (max-width: 800px) {
   .popup {
     width: 30vw;
