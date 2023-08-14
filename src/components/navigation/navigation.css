@@ -48,13 +48,13 @@ color: #2ECC71;
 
 .ctn-list-menu{
   display: flex;
-  flex-direction: row-reverse;
+ 
   align-items: center;
   
 }
 
 .nav_right{
-  width: 12vw;
+  width: 12rem;
   display: flex;
   justify-content: space-evenly;
 }
@@ -64,16 +64,31 @@ color: #2ECC71;
 
 
 
-
-/* Apply the animation to the links */
-
-
 @media only screen and (max-width: 800px) {
-  .title_nav{
-    display: none;
-  }
-  ul {
-    width: 100vw;
-    padding: 0;
-  }
+
+ .nav{
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-evenly;
+ }
+
+.nav_right{
+  width: 30vw;
+  height: 5vh;
+  
+  align-items: center;
+}
+.ctn-list-menu{
+  display: flex;
+
+  width: 95vw;
+  height: 7vh;
+
+}
+ul{
+  width: 100vw;
+}
+.ctn-list-menu li{
+  font-size: medium;
+}
 }

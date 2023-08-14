@@ -76,3 +76,12 @@ body {
   border-color: var(--font-color);
 }
 
+@media only screen and (max-width: 800px) {
+  header{
+   height: 15vh;
+   margin-top: -10vh;
+  }
+  footer{
+    height: 50vh;
+  }
+ }

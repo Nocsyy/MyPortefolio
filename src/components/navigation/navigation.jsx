@@ -31,71 +31,69 @@ function Navigation() {
     <header>
       <nav className='nav'>
         <div className='ctn-list-menu'>
-          <div className='navManu'>
-            <ul>
-              <ScrollLink
-                to='presentation'
-                smooth={true}
-                duration={500}
-                onSetActive={handleSetActive}
+          <ul>
+            <ScrollLink
+              to='presentation'
+              smooth={true}
+              duration={500}
+              onSetActive={handleSetActive}
+            >
+              <li
+                className={activeSection === 'about' ? 'active' : ''}
+                onClick={(e) => handleMenuClick('about', e.target)}
               >
-                <li
-                  className={activeSection === 'about' ? 'active' : ''}
-                  onClick={(e) => handleMenuClick('about', e.target)}
-                >
-                  {t('nav.li0') || 'Traduction non trouvée'}
-                </li>
-              </ScrollLink>
-              <ScrollLink
-                to='about'
-                smooth={true}
-                duration={500}
-                onSetActive={handleSetActive}
+                {t('nav.li0') || 'Traduction non trouvée'}
+              </li>
+            </ScrollLink>
+            <ScrollLink
+              to='about'
+              smooth={true}
+              duration={500}
+              onSetActive={handleSetActive}
+            >
+              <li
+                className={activeSection === 'about' ? 'active' : ''}
+                onClick={(e) => handleMenuClick('about', e.target)}
               >
-                <li
-                  className={activeSection === 'about' ? 'active' : ''}
-                  onClick={(e) => handleMenuClick('about', e.target)}
-                >
-                  {t('nav.li1') || 'Traduction non trouvée'}
-                </li>
-              </ScrollLink>
-              <ScrollLink
-                to='realisation'
-                smooth={true}
-                duration={500}
-                onSetActive={handleSetActive}
+                {t('nav.li1') || 'Traduction non trouvée'}
+              </li>
+            </ScrollLink>
+            <ScrollLink
+              to='realisation'
+              smooth={true}
+              duration={500}
+              onSetActive={handleSetActive}
+            >
+              <li
+                className={activeSection === 'realisation' ? 'active' : ''}
+                onClick={(e) => handleMenuClick('realisation', e.target)}
               >
-                <li
-                  className={activeSection === 'realisation' ? 'active' : ''}
-                  onClick={(e) => handleMenuClick('realisation', e.target)}
-                >
-                  {t('nav.li2') || 'Traduction non trouvée'}
-                </li>
-              </ScrollLink>
-              <ScrollLink
-                to='contact'
-                smooth={true}
-                duration={500}
-                onSetActive={handleSetActive}
+                {t('nav.li2') || 'Traduction non trouvée'}
+              </li>
+            </ScrollLink>
+            <ScrollLink
+              to='contact'
+              smooth={true}
+              duration={500}
+              onSetActive={handleSetActive}
+            >
+              <li
+                className={activeSection === 'contact' ? 'active bar' : 'bar'}
+                onClick={(e) => handleMenuClick('contact', e.target)}
               >
-                <li
-                  className={activeSection === 'contact' ? 'active bar' : 'bar'}
-                  onClick={(e) => handleMenuClick('contact', e.target)}
-                >
-                  {t('nav.li3') || 'Traduction non trouvée'}
-                </li>
-              </ScrollLink>
-            </ul>
+                {t('nav.li3') || 'Traduction non trouvée'}
+              </li>
+            </ScrollLink>
+          </ul>
 
-            {/* Menu bar */}
-            <div
-              className={`menu-bar ${barPosition === 0 ? '' : 'show'}`}
-              style={{
-                left: `${barPosition}px`,
-                width: `${barWidth}px`,
-              }}
-            />
-          </div>
+          {/* Menu bar */}
+          <div
+            className={`menu-bar ${barPosition === 0 ? '' : 'show'}`}
+            style={{
+              left: `${barPosition}px`,
+              width: `${barWidth}px`,
+            }}
+          />
         </div>
         <div className='nav_right'>
           <Dark_mode />
