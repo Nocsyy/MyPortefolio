@@ -1,42 +1,37 @@
 .popup {
-    width: 6vw;
-   display: flex;
-   align-items: center;
-  }
-.popup-content{
-    display: flex;
-  
-    justify-content: space-evenly;
-    width: 100%;
-  
+  width: 6vw;
+  display: flex;
+  align-items: center;
+}
 
-  }
-.popup-content select{
+.popup-content {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.popup-content select {
   width: 5rem;
   height: 3vh;
   border-radius: 15px;
   border: none;
   background-color: #2ECC71;
-  outline:  none;
+  color: #333;
+  outline: none;
   text-align: center;
-  -webkit-appearance: none; /* @affected Chrome */
+  -webkit-appearance: none; /* Chrome et Safari */
   -moz-appearance: none;
-  
-  
+  appearance: none;
 }
-.popup-content button{
-    border:none;
-    border-radius: 15px;
-    width: 5rem;
-    height: 3vh;
-    color: #333;
-    background-color: #2ecc7060;
-}
-.popup-content button:hover{
+
+
+
+.popup-content button:hover {
   background-color: #2ECC71;
 }
+
 @media only screen and (max-width: 800px) {
-  .popup{
+  .popup {
     width: 30vw;
   }
- }
+}

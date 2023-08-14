@@ -39,7 +39,7 @@ footer{
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  
   
 }
 
@@ -81,7 +81,5 @@ body {
    height: 15vh;
    margin-top: -10vh;
   }
-  footer{
-    height: 50vh;
-  }
+
  }

@@ -89,6 +89,10 @@ input{
 
 }
   @media only screen and (max-width: 1000px){
+    #contact{
+        
+        padding-top: 15vh;
+    }
     form{
         width: 90vw;
     }
