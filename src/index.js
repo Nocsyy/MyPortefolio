@@ -1,13 +1,10 @@
 import React from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import Navigation from './components/navigation/navigation';
-import Acceuil from './pages/acceuil';
-import Realisation from './components/réalisation/réalisation';
-import Footer from './components/footer/footer';
 import PageRea from './pages/page_rea';
-import Error from './components/error/error';
 import { createRoot } from 'react-dom/client';
-import Btn_Up from './components/btnUp/btnUp';
+import { AcceuilWithFooterAndNavigation, ErrorWithFooterAndNavigation } from './functionNavigate';
+import i18n from './i18n';
+import { I18nextProvider } from 'react-i18next';
 
 const root = createRoot(document.getElementById("root"));
 root.render(
@@ -22,26 +19,6 @@ root.render(
   </React.StrictMode>
 );
 
-function AcceuilWithFooterAndNavigation() {
-
-  return (
-    <div>
-      <Navigation />
-      <Acceuil />
-      <Footer />
-    </div>
-  );
-}
-
-function ErrorWithFooterAndNavigation() {
-  return (
-    <div>
-      <Navigation />
-      <Error />
-      <Footer />
-    </div>
-  );
-}
 
 
 

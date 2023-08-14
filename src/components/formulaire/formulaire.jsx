@@ -3,6 +3,7 @@ import './formulaire.css';
 import { db } from '../firebase.js';
 import { addDoc, collection } from 'firebase/firestore/lite';
 import CopyButton from '../copyBoutton/copyButton';
+import { useTranslation } from 'react-i18next';
 
 function Form() {
   const [mail, setMail] = useState('');
@@ -12,6 +13,7 @@ function Form() {
   const [isFormInvalid, setIsFormInvalid] = useState(false);
   const [isFormSubmitted, setIsFormSubmitted] = useState(false);
   const [isFormEmpty, setIsFormEmpty] = useState(false);
+  const { t } = useTranslation();
 
   const userCollectionRef = collection(db, 'contactdata');
 
@@ -56,11 +58,11 @@ function Form() {
   return (
     <section id='contact'>
       <div className='ctn-form' id='ctn-form'>
-        <h2>Me contacter📲</h2>
+        <h2>{t('contact.title') || 'Traduction non trouvée'}📲</h2>
         <div className='line_about'></div>
         <CopyButton text={'ncs.dev@hotmail.com'} />
         <form>
-          <label>Mail :</label>
+          <label>{t('contact.inputMail') || 'Traduction non trouvée'} :</label>
           <input
             onChange={(event) => {
               setMail(event.target.value);
@@ -70,7 +72,7 @@ function Form() {
             type='text'
             placeholder='john.doe@mail.com'
           ></input>
-          <label>Nom :</label>
+          <label>{t('contact.inputName') || 'Traduction non trouvée'} :</label>
           <input
             onChange={(event) => {
               setName(event.target.value);
@@ -80,7 +82,9 @@ function Form() {
             type='text'
             placeholder='Name'
           ></input>
-          <label>Message :</label>
+          <label>
+            {t('contact.inputMessage') || 'Traduction non trouvée'} :
+          </label>
           <textarea
             onChange={(event) => {
               setMessage(event.target.value);
@@ -100,7 +104,7 @@ function Form() {
               color: 'rgba(212, 17, 17, 0.852)',
             }}
           >
-            🚧 Veuillez remplir tous les champs du formulaire.
+            🚧 {t('contact.errorSubmit') || 'Traduction non trouvée'}
           </p>
         )}
         <div className='div_btn_submit'>
@@ -110,11 +114,11 @@ function Form() {
               onClick={handleSubmit}
               style={{ display: isFormEmpty ? 'none' : 'block' }}
             >
-              Envoyer
+              {t('contact.submit') || 'Traduction non trouvée'}
             </button>
           ) : (
             <p style={{ color: '#2ECC71', marginTop: '5vh' }}>
-              Demande envoyée !
+              {t('contact.validated') || 'Traduction non trouvée'}
             </p>
           )}
         </div>

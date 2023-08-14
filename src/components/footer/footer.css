@@ -3,6 +3,7 @@
     flex-direction: row;
     justify-content: space-between;
     text-align: center;
+    padding :20px;
 }
 .footer_about{
     width: 45%;

@@ -3,11 +3,14 @@ import { Link } from 'react-router-dom';
 import { Link as ScrollLink, animateScroll as scroll } from 'react-scroll';
 import './navigation.css';
 import Dark_mode from '../darkMode/darkMode';
+import Popup from '../PopupLang/popup';
+import { useTranslation } from 'react-i18next';
 function Navigation() {
   const [activeSection, setActiveSection] = useState('');
   const [barPosition, setBarPosition] = useState(0);
   const [barWidth, setBarWidth] = useState(0);
   const [showMenu, setShowMenu] = useState(true);
+  const { t } = useTranslation();
 
   const handleSetActive = (to) => {
     setActiveSection(to);
@@ -27,29 +30,22 @@ function Navigation() {
   return (
     <header>
       <nav className='nav'>
-        <div id='ctn-effect-glitch'>
-          <ScrollLink
-            to='presentation'
-            smooth={true}
-            duration={1000}
-            onSetActive={handleSetActive}
-            offset={-10 * window.innerHeight}
-          >
-            <li
-              style={{ textDecoration: 'none' }}
-              className={activeSection === 'acceuil' ? 'active' : ''}
-              onClick={(e) => handleMenuClick('about', e.target)}
-            >
-              <h4 className='title_nav'>ANDY OZDEMIR</h4>
-              <h4 className='title_nav'>ANDY OZDEMIR</h4>
-              <h4 className='title_nav'>ANDY OZDEMIR</h4>
-            </li>
-          </ScrollLink>
-        </div>
-
         <div className='ctn-list-menu'>
           <div className='navManu'>
             <ul>
+              <ScrollLink
+                to='presentation'
+                smooth={true}
+                duration={500}
+                onSetActive={handleSetActive}
+              >
+                <li
+                  className={activeSection === 'about' ? 'active' : ''}
+                  onClick={(e) => handleMenuClick('about', e.target)}
+                >
+                  {t('nav.li0') || 'Traduction non trouvée'}
+                </li>
+              </ScrollLink>
               <ScrollLink
                 to='about'
                 smooth={true}
@@ -60,7 +56,7 @@ function Navigation() {
                   className={activeSection === 'about' ? 'active' : ''}
                   onClick={(e) => handleMenuClick('about', e.target)}
                 >
-                  About
+                  {t('nav.li1') || 'Traduction non trouvée'}
                 </li>
               </ScrollLink>
               <ScrollLink
@@ -73,7 +69,7 @@ function Navigation() {
                   className={activeSection === 'realisation' ? 'active' : ''}
                   onClick={(e) => handleMenuClick('realisation', e.target)}
                 >
-                  Réalisation
+                  {t('nav.li2') || 'Traduction non trouvée'}
                 </li>
               </ScrollLink>
               <ScrollLink
@@ -86,11 +82,11 @@ function Navigation() {
                   className={activeSection === 'contact' ? 'active bar' : 'bar'}
                   onClick={(e) => handleMenuClick('contact', e.target)}
                 >
-                  Contact
+                  {t('nav.li3') || 'Traduction non trouvée'}
                 </li>
               </ScrollLink>
             </ul>
-            <Dark_mode />
+
             {/* Menu bar */}
             <div
               className={`menu-bar ${barPosition === 0 ? '' : 'show'}`}
@@ -100,6 +96,10 @@ function Navigation() {
               }}
             />
           </div>
+        </div>
+        <div className='nav_right'>
+          <Dark_mode />
+          <Popup />
         </div>
       </nav>
     </header>

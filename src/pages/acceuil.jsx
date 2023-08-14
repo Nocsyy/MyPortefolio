@@ -6,12 +6,17 @@ import Apropos from '../components/Apropos/apropos';
 import '../index.css';
 
 import React, { useState, useEffect } from 'react';
-
 import Btn_Up from '../components/btnUp/btnUp';
+import Popup from '../components/PopupLang/popup';
 
 function Acceuil() {
   const [rea, setRea] = useState([]);
   const [hoveredItem, setHoveredItem] = useState(null);
+  const [selectedLanguage, setSelectedLanguage] = useState('');
+
+  const updateLanguage = (language) => {
+    setSelectedLanguage(language);
+  };
 
   useEffect(() => {
     fetch('/realisation.json')
@@ -29,9 +34,7 @@ function Acceuil() {
     <body>
       <Presentation />
       <Apropos />
-
       <Realisation />
-
       <Form />
       <Btn_Up />
     </body>

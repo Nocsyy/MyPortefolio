@@ -4,10 +4,12 @@ import './realisation.css';
 import Carroussel from '../carroussel/ carroussel';
 import Collapse from '../collapse/collapse';
 import Navigation from '../navigation/navigation';
+import { useTranslation } from 'react-i18next';
 
 function Realisation(props) {
   const [rea, setRea] = useState([]);
   const [hoveredItem, setHoveredItem] = useState(null);
+  const { t } = useTranslation();
 
   const handleLinkClick = (button) => {
     window.scrollTo(0, 0); // Faites défiler la page vers le haut lors du clic sur le lien
@@ -40,7 +42,7 @@ function Realisation(props) {
           fontFamily: 'lato',
         }}
       >
-        Mes réalisations :
+        {t('realisation.title') || 'traduction non trouvée'}
       </h2>
       <div className='line_rea'></div>
       <div className='ctn-data'>

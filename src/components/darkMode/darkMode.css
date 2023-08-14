@@ -1,49 +1,13 @@
-    .app-container{
-        height: 0vh;
-    }
+    
     .ctn_btn_dark input[type=checkbox]{
-        height: 0;
-        width: 0;
-        visibility: hidden;
+        display: none;
+    }
+    .ctn_btn_dark label{
+        font-size: 3vh;
     }
     
-    .ctn_btn_dark label {
-        cursor: pointer;
-        text-indent: -9999px;
-        width: 50px;
-        height: 25px;
-        background: grey;
-        display: block;
-        border-radius: 100px;
-        position:fixed;
-        right: 15px;
-        z-index: 999;
-    }
     
-    .ctn_btn_dark label:after {
-        content: '';
-        position: absolute;
-        top: 1px;
-        left: 1px;
-        width: 25px;
-        height: 23px;
-        background: #fff;
-        border-radius: 20px;
-        transition: 0.3s;
-       
-    }
     
-    .ctn_btn_dark input:checked + label {
-        background: #2ECC71;
-    }
     
-    .ctn_btn_dark input:checked + label:after {
-        left: calc(100% - 1px);
-        transform: translateX(-100%);
-    }
-    
-    .ctn_btn_dark label:active:after {
-        width: 30px;
-    }
    
     

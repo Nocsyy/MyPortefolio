@@ -1,15 +1,15 @@
+import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import './footer.css';
 function Footer() {
+  const { t } = useTranslation();
   return (
     <footer>
       <div className='ctn_about_social'>
         <div className='footer_about'>
           <h3>Andy Ozdemir</h3>
           <p style={{ fontSize: 'small' }}>
-            Développeur web junior, déterminé à résoudre les défis les plus
-            stimulants. Toujours en quête d'innovation, prêt à collaborer pour
-            créer des solutions numériques exceptionnelles.
+            {t('presentation.miniDescription') || 'Traduction non trouvée'}
           </p>
         </div>
         <div className='ctn_social'>
@@ -42,7 +42,10 @@ function Footer() {
         <div className='line_footer'></div>
       </div>
       <div className='ctn_copyright'>
-        <p> © 2023 Réalisé par Andy OZDEMIR</p>
+        <p>
+          {' '}
+          © 2023 {t('footer.make') || 'Traduction non trouvée'} Andy OZDEMIR
+        </p>
       </div>
     </footer>
   );

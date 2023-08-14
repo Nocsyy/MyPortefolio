@@ -36,7 +36,7 @@ function Dark_mode() {
   }
 
   // 5
-  const toggleTheme: ChangeEventHandler<HTMLInputElement> = (e) => {
+  const toggleTheme = (e) => {
     if (e.target.checked) {
       setDark();
     } else {
@@ -46,16 +46,16 @@ function Dark_mode() {
 
   return (
     <div className='ctn_btn_dark'>
-      <div className={`app-container ${darkMode ? 'dark-mode' : 'light-mode'}`}>
-        <input
-          type='checkbox'
-          className='btn_dark_mode'
-          id='switch'
-          onChange={toggleTheme}
-          defaultChecked={defaultDark}
-        />
-        <label for='switch' className={darkMode ? '☀️' : '🌑'}></label>
-      </div>
+      <input
+        type='checkbox'
+        className='btn_dark_mode'
+        id='switch'
+        onChange={toggleTheme}
+        defaultChecked={defaultDark}
+      />
+      <label for='switch' onClick={toggleDarkMode}>
+        {darkMode ? '🌑' : '☀️'}
+      </label>
     </div>
   );
 }

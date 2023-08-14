@@ -1,0 +1,37 @@
+.popup {
+    width: 6vw;
+   display: flex;
+   align-items: center;
+  }
+.popup-content{
+    display: flex;
+  
+    justify-content: space-evenly;
+    width: 100%;
+  
+
+  }
+.popup-content select{
+  width: 5rem;
+  height: 3vh;
+  border-radius: 15px;
+  border: none;
+  background-color: #2ECC71;
+  outline:  none;
+  text-align: center;
+  -webkit-appearance: none; /* @affected Chrome */
+  -moz-appearance: none;
+  
+  
+}
+.popup-content button{
+    border:none;
+    border-radius: 15px;
+    width: 5rem;
+    height: 3vh;
+    color: #333;
+    background-color: #2ecc7060;
+}
+.popup-content button:hover{
+  background-color: #2ECC71;
+}

@@ -1,5 +1,11 @@
+import react from 'react';
+import { useEffect } from 'react';
+import { useTranslation, Trans } from 'react-i18next';
 import './apropos.css';
+
 function Apropos() {
+  const { t, i18n } = useTranslation();
+
   return (
     <section id='about'>
       <h2
@@ -8,7 +14,7 @@ function Apropos() {
           paddingTop: '2vh',
         }}
       >
-        Un peu plus sur moi
+        {t('description.me') || 'Traduction non trouvée'}
       </h2>
       <div className='line_about'></div>
       <div className='section_about'>
@@ -20,38 +26,25 @@ function Apropos() {
               marginBottom: '5vh',
             }}
           >
-            Me connaitre
+            {t('description.knowMe') || 'Traduction non trouvée'}
           </h3>
           <p style={{ paddingRight: '2vw' }}>
-            🚀 Développeur Web Junior passionné par l'innovation technologique
-            et les solutions numériques !
+            {t('description.part1') || 'Traduction non trouvée'}
           </p>
           <p style={{ paddingRight: '2vw' }}>
-            🌐💡 Maîtrisant les technologies HTML, CSS, React, Node.js, Express
-            et ayant une solide compréhension de Svelte, je suis constamment à
-            la recherche de nouveaux défis pour renforcer mes compétences et
-            relever des projets ambitieux.
+            {t('description.part2') || 'Traduction non trouvée'}
           </p>
           <p style={{ paddingRight: '2vw' }}>
-            🛠️ Mon expérience académique et mes projets durant ma formation ont
-            façonné mon expertise en développement web, me permettant de
-            concevoir des solutions créatives et robustes pour résoudre les
-            problèmes les plus complexes.
+            {t('description.part3') || 'Traduction non trouvée'}
           </p>
           <p style={{ paddingRight: '2vw' }}>
-            🤝 Doté d'un excellent esprit d'équipe, je sais collaborer
-            efficacement avec mes collègues pour atteindre des objectifs communs
-            et délivrer des résultats exceptionnels.
+            {t('description.part4') || 'Traduction non trouvée'}
           </p>
           <p style={{ paddingRight: '2vw' }}>
-            📈 Mon désir de perfectionnement me pousse à rester à l'affût des
-            dernières tendances technologiques, afin de fournir des produits à
-            la pointe de l'industrie.
+            {t('description.part5') || 'Traduction non trouvée'}
           </p>
           <p style={{ paddingRight: '2vw' }}>
-            💡 Curieux de nature, je suis avide de nouvelles connaissances et je
-            suis toujours ouvert à apprendre de nouvelles technologies pour
-            enrichir mon savoir-faire.
+            {t('description.part6') || 'Traduction non trouvée'}
           </p>
         </div>
         <div className='ctn_line'>
@@ -65,7 +58,7 @@ function Apropos() {
               marginBottom: '5vh',
             }}
           >
-            Technologies maitrisées :{' '}
+            {t('description.techno') || 'Traduction non trouvée'}
           </h3>
           <div className='ctn_icon'>
             <div>
