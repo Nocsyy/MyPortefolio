@@ -49,7 +49,7 @@
 
 @media only screen and (max-width:815px){
   #about{
-    padding-top: 12vh;
+    padding-top: 10vh;
   
   }
   .section_about{
@@ -83,5 +83,11 @@
   }
   .ctn_icon div{
     width: 40vw;
+  }
+}
+
+@media (orientation: landscape) {
+  p{
+    font-size: 15px;
   }
 }

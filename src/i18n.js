@@ -68,7 +68,7 @@ i18n
                         li0: "Acceuil",
                         li1: "A propos",
                         li2: "Réalisation",
-                        li3: "Contacte"
+                        li3: "Contact"
                     },
 
                     presentation: {

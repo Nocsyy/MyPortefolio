@@ -1,9 +1,9 @@
 #contact{
-    height: 100vh;
+    min-height: 90vh;
     padding-top: 12vh;
 }
 .ctn-form {
-    height: 100vh;
+    min-height: 70vh;
     display: flex;
     flex-direction: column;
     
@@ -100,3 +100,23 @@ input{
         width: 60%;
     }
 }
+
+@media (orientation: landscape) {
+    #contact{
+        padding-top: 23vh;
+        margin-bottom: 5vh;
+    }
+    
+    .ctn-form label{
+        margin-bottom: 3vh;
+    }
+.ctn-form input{
+    height: 10vh;
+}
+
+.btn_submit{
+    width: 40vw;
+    height: 10vh;
+    
+}
+  }

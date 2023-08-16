@@ -10,6 +10,7 @@ function Navigation() {
   const [barPosition, setBarPosition] = useState(0);
   const [barWidth, setBarWidth] = useState(0);
   const [showMenu, setShowMenu] = useState(true);
+  const [burgerMenuVisible, setBurgerMenuVisible] = useState(false);
   const { t } = useTranslation();
 
   const handleSetActive = (to) => {

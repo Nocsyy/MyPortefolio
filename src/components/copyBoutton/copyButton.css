@@ -10,3 +10,8 @@
         width: 80vw;
     }
 }
+@media (orientation: landscape) {
+  .div_copyButton{
+    width: 50vw;
+  }
+  }

@@ -9,6 +9,12 @@
         font-size: 3vh;
         
     }
+
+    @media (orientation: landscape) {
+      .ctn_btn_dark label{
+        font-size: larger;
+      }
+         }
     
     
     

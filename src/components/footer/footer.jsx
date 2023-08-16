@@ -1,5 +1,7 @@
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
+import Dark_mode from '../darkMode/darkMode';
+import Popup from '../PopupLang/popup';
 import './footer.css';
 function Footer() {
   const { t } = useTranslation();
@@ -35,6 +37,10 @@ function Footer() {
                 style={{ color: 'white', fontSize: 'x-large' }}
               ></i>
             </a>
+          </div>
+          <div className='display_none'>
+            <Dark_mode />
+            <Popup />
           </div>
         </div>
       </div>

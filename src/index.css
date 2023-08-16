@@ -15,14 +15,13 @@ header{
   display: flex;
   text-align: center;
   position: fixed;
-  margin-top: -10vh;
-  border-bottom: 0.5px solid;
-  background-color: rgb(255, 255, 255);
+  align-items: center;
+  
+ 
 }
 
 body { 
   background-color: rgba(255, 255, 255, 0.415);
-  margin-top: 10vh;
   margin-left: 0;
   margin-right: 0;
   margin-bottom: 0;
@@ -42,10 +41,13 @@ footer{
   
   
 }
-
+nav {
+  background-color: #f4f3f0cc;
+}
 :root {
   --font-color:#333;
   --background-color: white;
+  --back-color: #f4f3f0cc;
   --link-color: cornflowerblue;
   
 }
@@ -65,9 +67,7 @@ body {
   background-color: var(--background-color);
   color: var(--font-color);
 }
-.nav{
-  background-color: var(--back_color);
-}
+
  i, h2, li, a, .line, .label { 
   color: var(--font-color);
 }
@@ -76,12 +76,20 @@ body {
   border-color: var(--font-color);
 }
 
-@media only screen and (max-width: 800px) {
+@media (orientation: landscape) {
   header{
-   height: 15vh;
-   margin-top: -10vh;
+    height: 20vh;
   }
+}
+@media only screen and (max-width: 900px) {
+
   footer{
-    height: 50vh;
+   min-height: 50vh;
   }
  }
+
+@media (orientation: landscape) {
+footer{
+  min-height: 65vh;
+}
+}
