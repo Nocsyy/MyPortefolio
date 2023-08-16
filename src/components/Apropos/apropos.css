@@ -87,6 +87,9 @@
 }
 
 @media (orientation: landscape) {
+  #about{
+    padding-top: 18vh;
+  }
   p{
     font-size: 15px;
   }

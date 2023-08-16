@@ -61,4 +61,24 @@ align-items: center;
     .display_none{
       display: none;
     }
+   
     }
+    @media (orientation: landscape) {
+      
+      .ctn_about_social{
+        min-height: 45vh;
+        padding-top: 10px;
+        padding-bottom: 10px;
+      }
+      .ctn_social{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+      }
+      .display_none{
+        height: 20vh;
+      }
+      
+         }
+    
+    

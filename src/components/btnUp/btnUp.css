@@ -23,3 +23,10 @@
     font-size: large;
 }
 
+@media (orientation: landscape) {
+    .btnUpContainer{
+        bottom: 50px;
+    }
+       }
+  
+  
