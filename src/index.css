@@ -88,7 +88,7 @@ body {
   }
  }
 
-@media (orientation: landscape) {
+@media (max-width: 899px) and (orientation: landscape) {
 footer{
   min-height: 65vh;
 }

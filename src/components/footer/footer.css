@@ -63,7 +63,7 @@ align-items: center;
     }
    
     }
-    @media (orientation: landscape) {
+    @media (max-width: 899px) and (orientation: landscape) {
       
       .ctn_about_social{
         min-height: 45vh;

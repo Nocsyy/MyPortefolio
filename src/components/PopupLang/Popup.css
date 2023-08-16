@@ -28,7 +28,7 @@
     width: 30vw;
   }
 }
-@media (orientation: landscape) {
+@media(max-width: 899px) and (orientation: landscape) {
  .popup-content select {
   height: 6vh;
  }

@@ -10,7 +10,7 @@
         width: 80vw;
     }
 }
-@media (orientation: landscape) {
+@media(max-width: 899px) and (orientation: landscape) {
   .div_copyButton{
     width: 50vw;
   }

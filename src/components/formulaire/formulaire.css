@@ -101,7 +101,7 @@ input{
     }
 }
 
-@media (orientation: landscape) {
+@media (max-width: 899px) and (orientation: landscape){
     #contact{
         padding-top: 25vh;
         margin-bottom: 5vh;

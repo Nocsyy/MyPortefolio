@@ -75,10 +75,8 @@ ul {
   }
 
 }
-@media (orientation: landscape) {
-  header{
-    height: 30vh;
-  }
+@media (max-width: 899px) and (orientation: landscape) {
+
  .nav {
   height: 100vh;
  }

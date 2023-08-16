@@ -10,7 +10,7 @@
         
     }
 
-    @media (orientation: landscape) {
+    @media (max-width: 899px) and (orientation: landscape) {
       .ctn_btn_dark label{
         font-size: larger;
       }

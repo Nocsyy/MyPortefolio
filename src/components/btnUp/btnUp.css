@@ -23,7 +23,7 @@
     font-size: large;
 }
 
-@media (orientation: landscape) {
+@media (max-width: 899px) and (orientation: landscape) {
     .btnUpContainer{
         bottom: 50px;
     }
