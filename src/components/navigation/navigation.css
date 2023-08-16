@@ -76,7 +76,6 @@ ul {
 
 }
 @media (max-width: 700px) and (orientation: landscape) {
-
  .nav {
   height: 100vh;
  }

@@ -76,11 +76,7 @@ body {
   border-color: var(--font-color);
 }
 
-@media (orientation: landscape) {
-  header{
-    height: 20vh;
-  }
-}
+
 @media only screen and (max-width: 900px) {
 
   footer{
@@ -89,6 +85,9 @@ body {
  }
 
 @media (max-width: 700px) and (orientation: landscape) {
+  header{
+    height: 20vh;
+  }
 footer{
   min-height: 65vh;
 }
