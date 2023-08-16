@@ -23,8 +23,13 @@
   -moz-appearance: none;
   appearance: none;
 }
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 899px) {
   .popup {
     width: 30vw;
   }
 }
+@media (orientation: landscape) {
+ .popup-content select {
+  height: 6vh;
+ }
+  }
