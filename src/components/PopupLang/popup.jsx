@@ -12,6 +12,7 @@ function Popup() {
     fr: { nativeName: 'Français' },
     de: { nativeName: 'Deutsch' },
     tr: { nativeName: 'Türkçe' },
+    cn: { nativeName: '中国' },
   };
   useEffect(() => {
     setSelectedLanguage(i18n.language); // Mettre à jour la langue sélectionnée avec la langue actuelle

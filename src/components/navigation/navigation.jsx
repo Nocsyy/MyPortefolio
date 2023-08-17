@@ -40,7 +40,7 @@ function Navigation() {
               onSetActive={handleSetActive}
             >
               <li
-                className={activeSection === 'about' ? 'active' : ''}
+                className={activeSection === 'presentation' ? 'active' : ''}
                 onClick={(e) => handleMenuClick('about', e.target)}
               >
                 {t('nav.li0') || 'Traduction non trouvée'}
