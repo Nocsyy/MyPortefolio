@@ -40,6 +40,7 @@ ul {
   padding: 0.8rem;
   list-style: none;
   transition: background-color 0.5s ease, color 0.3s ease;
+  color: #333;
 }
 
 .nav li:hover {
