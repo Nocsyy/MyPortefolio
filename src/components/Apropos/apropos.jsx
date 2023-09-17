@@ -1,6 +1,7 @@
 import react from 'react';
 import { useEffect } from 'react';
 import { useTranslation, Trans } from 'react-i18next';
+import Progress_bar from '../progressBar/progressBar';
 import './apropos.css';
 
 function Apropos() {
@@ -62,44 +63,16 @@ function Apropos() {
           </h3>
           <div className='ctn_icon'>
             <div>
-              <i
-                class='fa-brands fa-html5'
-                style={{ color: '#c81919', fontSize: '5rem' }}
-              ></i>
+              <p>Text</p>
+              <Progress_bar bgcolor='grey' progress='100' />
             </div>
             <div>
-              <i
-                class='fa-brands fa-css3'
-                style={{ color: '#005eff', fontSize: '5rem' }}
-              ></i>
+              <p>Text</p>
+              <Progress_bar bgcolor='grey' progress='60' />
             </div>
             <div>
-              <i
-                class='fa-brands fa-react'
-                style={{ color: '#38e8ff', fontSize: '5rem' }}
-              ></i>
-            </div>
-            <div>
-              <i
-                class='fa-brands fa-js'
-                style={{ color: '#ffdd00', fontSize: '5rem' }}
-              ></i>
-            </div>
-            <div>
-              <h5 style={{ color: 'green', margin: '5px', fontSize: '2rem' }}>
-                Mango
-              </h5>
-            </div>
-            <div>
-              <h5 style={{ color: 'grey', margin: '5px', fontSize: '2rem' }}>
-                Express
-              </h5>
-            </div>
-            <div>
-              <i
-                class='fa-brands fa-node-js'
-                style={{ color: '#00994a', fontSize: '5rem' }}
-              ></i>
+              <p>Text</p>
+              <Progress_bar bgcolor='grey' progress='10' />
             </div>
           </div>
         </div>
