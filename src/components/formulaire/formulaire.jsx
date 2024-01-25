@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import './formulaire.css';
 import { db } from '../firebase.js';
@@ -19,12 +18,25 @@ function Form() {
 
   const userCollectionRef = collection(db, 'contactdata');
 
+  const validateEmail = (email) => {
+    // Une validation d'email simple (ajustez selon vos besoins)
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailRegex.test(email);
+  };
+
+  const sanitizeAndValidateName = (name) => {
+    // Nettoyer le nom en utilisant DOMPurify
+    const sanitizedName = DOMPurify.sanitize(name);
+    // Valider si le nom est vide après nettoyage
+    return sanitizedName.trim() !== '';
+  };
+
   const handleSubmit = (event) => {
     event.preventDefault();
 
     const sanitizedMessage = DOMPurify.sanitize(message);
 
-    if (mail.trim() === '' || name.trim() === '' || sanitizedMessage.trim() === '') {
+    if (!validateEmail(mail) || !sanitizeAndValidateName(name) || sanitizedMessage.trim() === '') {
       setIsFormEmpty(true);
       setIsFormInvalid(true);
       setTimeout(() => {
