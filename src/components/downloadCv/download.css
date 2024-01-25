@@ -16,3 +16,8 @@
     background-color: #2ECC71;
     color: white;
 }
+@media only screen and (max-width: 800px) {
+    .btn_dl{
+        width: 30vw;
+    }
+     }
