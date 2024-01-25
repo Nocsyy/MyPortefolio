@@ -111,12 +111,13 @@ input{
         margin-bottom: 3vh;
     }
 .ctn-form input{
-    height: 10vh;
+    height: 5vh;
 }
 
 .btn_submit{
     width: 40vw;
-    height: 10vh;
+
     
 }
+
   }

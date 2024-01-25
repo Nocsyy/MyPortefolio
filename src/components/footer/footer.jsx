@@ -50,7 +50,7 @@ function Footer() {
       <div className='ctn_copyright'>
         <p>
           {' '}
-          © 2023 {t('footer.make') || 'Traduction non trouvée'} Andy OZDEMIR
+          © 2024 {t('footer.make') || 'Traduction non trouvée'} Andy OZDEMIR
         </p>
       </div>
     </footer>

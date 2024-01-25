@@ -84,7 +84,7 @@ ul {
 @media only screen and (max-width: 899px) {
   .nav{
     width: 95vw;
-    height: 100%;
+    height: 80%;
   }
   .nav li:hover {
     color: #12a54f;
