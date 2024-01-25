@@ -1,9 +1,11 @@
+
 import React, { useState } from 'react';
 import './formulaire.css';
 import { db } from '../firebase.js';
 import { addDoc, collection } from 'firebase/firestore/lite';
 import CopyButton from '../copyBoutton/copyButton';
 import { useTranslation } from 'react-i18next';
+import DOMPurify from 'dompurify';
 
 function Form() {
   const [mail, setMail] = useState('');
@@ -20,7 +22,9 @@ function Form() {
   const handleSubmit = (event) => {
     event.preventDefault();
 
-    if (mail.trim() === '' || name.trim() === '' || message.trim() === '') {
+    const sanitizedMessage = DOMPurify.sanitize(message);
+
+    if (mail.trim() === '' || name.trim() === '' || sanitizedMessage.trim() === '') {
       setIsFormEmpty(true);
       setIsFormInvalid(true);
       setTimeout(() => {
@@ -33,7 +37,7 @@ function Form() {
     addDoc(userCollectionRef, {
       mail: mail,
       name: name,
-      message: message,
+      message: sanitizedMessage,
     })
       .then(() => {
         setIsSubmitted(true);
@@ -54,7 +58,6 @@ function Form() {
     setName('');
     setMessage('');
   };
-
   return (
     <section id='contact'>
       <div className='ctn-form' id='ctn-form'>
