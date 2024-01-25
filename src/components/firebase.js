@@ -6,8 +6,7 @@ const firebaseConfig = {
     authDomain: "porte-f69a1.firebaseapp.com",
     projectId: "porte-f69a1",
     storageBucket: "porte-f69a1.appspot.com",
-    messagingSenderId: "883032355546",
-    appId: "1:883032355546:web:cb6fa682beecac9bcfabe3"
+
 };
 
 
