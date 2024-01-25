@@ -10,7 +10,7 @@ const Progress_bar = ({ bgcolor, progress, height }) => {
     const options = {
       root: null,
       rootMargin: '0px',
-      threshold: [0, 0.5], // Adjust threshold based on your needs
+      threshold: [1, 0.3], // Adjust threshold based on your needs
     };
 
     const handleIntersect = (entries) => {
@@ -48,7 +48,7 @@ const Progress_bar = ({ bgcolor, progress, height }) => {
     backgroundColor: bgcolor,
     borderRadius: 40,
     textAlign: 'right',
-    transition: 'width 0.5s ease',
+
   };
 
   const progresstext = {

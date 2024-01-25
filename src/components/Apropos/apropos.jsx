@@ -3,6 +3,7 @@ import { useEffect } from 'react';
 import { useTranslation, Trans } from 'react-i18next';
 import Progress_bar from '../progressBar/progressBar';
 import Carousel from '../carouselPhrase/Carousel'
+import BoutonTelechargement from '../downloadCv/download';
 import './apropos.css';
 
 function Apropos() {
@@ -111,6 +112,7 @@ function Apropos() {
           <div className='line_about'></div>
           <Carousel phrases={phrases} />
         </div>
+        <BoutonTelechargement />
       </div>
     </section >
   );
