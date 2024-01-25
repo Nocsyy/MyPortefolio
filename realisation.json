@@ -2,50 +2,77 @@
     {
         "id": "1ZHDD38D29D2",
         "img": "https://nocsyy.github.io/db/asset/img.png",
-        "img_carroussel": ["https://nocsyy.github.io/db/asset/imgBluel1.png", "https://nocsyy.github.io/db/asset/imgBluel2.png", "https://nocsyy.github.io/db/asset/imgBluel3.png"],
+        "img_carroussel": [
+            "https://nocsyy.github.io/db/asset/imgBluel1.png",
+            "https://nocsyy.github.io/db/asset/imgBluel2.png",
+            "https://nocsyy.github.io/db/asset/imgBluel3.png"
+        ],
         "title": "Sophie Bluel",
         "description": "Site pour une architecte d'interieur pour qu'elle puisse diffuser ses réalisations",
         "langage": "JavaScript - Html -Css",
         "url": "https://github.com/Nocsyy/op3",
-        "techno":["Html", "CSS", "JavaScript"],
-        "mission" : "Création d'un portfolio dynamique pour une architecte d'interieur, ce site lui permet d'ajouter et de supprimer des photos pour exposer son travail. Un formulaire de contacte est présent afin qu'elle puisse être contactée ."
-
+        "techno": [
+            "Html",
+            "CSS",
+            "JavaScript"
+        ],
+        "mission": "Création d'un portfolio dynamique pour une architecte d'interieur, ce site lui permet d'ajouter et de supprimer des photos pour exposer son travail. Un formulaire de contacte est présent afin qu'elle puisse être contactée ."
     },
     {
         "id": "0b9aadca",
         "img": "https://nocsyy.github.io/db/asset/kasa.png",
-        "img_carroussel":["https://nocsyy.github.io/db/asset/imgKasa1.png","https://nocsyy.github.io/db/asset/imgKasa2.png","https://nocsyy.github.io/db/asset/imgKasa3.png","https://nocsyy.github.io/db/asset/mgKasa4.png"],
+        "img_carroussel": [
+            "https://nocsyy.github.io/db/asset/imgKasa1.png",
+            "https://nocsyy.github.io/db/asset/imgKasa2.png",
+            "https://nocsyy.github.io/db/asset/imgKasa3.png",
+            "https://nocsyy.github.io/db/asset/imgKasa4.png"
+        ],
         "title": "Kasa",
         "description": "Notation de logement de particulier",
-        "langage" : "React",
+        "langage": "React",
         "url": "https://github.com/Nocsyy/ocP6",
-        "techno":["React"],
-        "mission" : "Création d'un site dynamique. L'objectif était de récupéerer les logements ajouté par les utilisateurs, respecter la maquettes Figma et le responsive, gerer react router et gérer fetch."
-      
+        "techno": [
+            "React"
+        ],
+        "mission": "Création d'un site dynamique. L'objectif était de récupéerer les logements ajouté par les utilisateurs, respecter la maquettes Figma et le responsive, gerer react router et gérer fetch."
     },
     {
         "id": "153b3034",
         "img": "https://nocsyy.github.io/db/asset/Booki.png",
-        "img_carroussel":["https://nocsyy.github.io/db/asset/imgBooki1.png", "https://nocsyy.github.io/db/asset/imgBooki2.png"],
+        "img_carroussel": [
+            "https://nocsyy.github.io/db/asset/imgBooki1.png",
+            "https://nocsyy.github.io/db/asset/imgBooki2.png"
+        ],
         "title": "Booki",
         "description": "Hebergement de locagement de vacances",
-        "langage" : "Html - Css",
+        "langage": "Html - Css",
         "url": "https://github.com/Nocsyy/Projet-p2-oc",
         "url_site": "https://nocsyy.github.io/projetOC2-booki/",
-        "techno":["Html ", "CSS"],
-        "mission" : "Création d'un site simple en html et css. Il présente des hébergements et des activités de vacances "
-       
+        "techno": [
+            "Html ",
+            "CSS"
+        ],
+        "mission": "Création d'un site simple en html et css. Il présente des hébergements et des activités de vacances "
     },
     {
         "id": "1a459aa6",
         "img": "https://nocsyy.github.io/db/asset/monvieuxgrimoire.png",
-        "img_carroussel":["https://nocsyy.github.io/db/asset/monvieuxgrimoire1.png", "https://nocsyy.github.io/db/asset/monvieuxgrimoire2.png", "https://nocsyy.github.io/db/asset/monvieuxgrimoire3.png", "https://nocsyy.github.io/db/asset/monvieuxgrimoire4.png", "https://nocsyy.github.io/db/asset/monvieuxgrimoire5.png"],
+        "img_carroussel": [
+            "https://nocsyy.github.io/db/asset/monvieuxgrimoire1.png",
+            "https://nocsyy.github.io/db/asset/monvieuxgrimoire2.png",
+            "https://nocsyy.github.io/db/asset/monvieuxgrimoire3.png",
+            "https://nocsyy.github.io/db/asset/monvieuxgrimoire4.png",
+            "https://nocsyy.github.io/db/asset/monvieuxgrimoire5.png"
+        ],
         "title": "Mon vieux grimoire",
         "description": "Notation de livre",
-        "langage" : "React - mangoDb - Express",
+        "langage": "React - mangoDb - Express",
         "url": "https://github.com/Nocsyy/OpP7",
-        "techno":["React ", "MangoDB", "Express"],
-        "mission" : "Création d'un site pour qui permet de noter des livres, les utilisateur vont pouvoir s'inscrire et se connecter."
-       
+        "techno": [
+            "React ",
+            "MangoDB",
+            "Express"
+        ],
+        "mission": "Création d'un site pour qui permet de noter des livres, les utilisateur vont pouvoir s'inscrire et se connecter."
     }
 ]
