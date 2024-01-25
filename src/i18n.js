@@ -65,7 +65,7 @@ i18n
             fr: {
                 translation: {
                     nav: {
-                        li0: "Acceuil",
+                        li0: "Accueil",
                         li1: "A propos",
                         li2: "Réalisation",
                         li3: "Contact"

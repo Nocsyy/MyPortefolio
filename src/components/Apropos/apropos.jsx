@@ -96,9 +96,7 @@ function Apropos() {
           </div>
         </div>
 
-        <div className='ctn_line'>
-          <div className='line'></div>
-        </div>
+
         <div className='ctn_presentation'>
           <h2
             style={{
